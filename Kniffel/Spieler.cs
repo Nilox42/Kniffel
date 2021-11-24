@@ -17,9 +17,11 @@ namespace Kniffel
         dreierpasch = 7,
         viererpasch = 8,
         fullhouse = 9,
-        kleiestrasse = 10,
-        grossestrase = 11,
-        kniffel = 12
+        kleinestrasse = 10,
+        grossestrasse = 11,
+        kniffel = 12,
+
+        fehler = 13
     }
 
     public class Spieler

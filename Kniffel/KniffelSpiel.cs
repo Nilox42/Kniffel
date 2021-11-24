@@ -47,10 +47,14 @@ namespace Kniffel
 
         private void pbwuerfel_Click(object sender, EventArgs e)
         {
+            btwürfeln_Click(sender, e);
+        }
+        private void btwürfeln_Click(object sender, EventArgs e)
+        {
             wurfzahl++;
-            if (wurfzahl < 3)
+            if (wurfzahl < 4)
             {
-                
+
                 wuerfeln();
 
             }
@@ -65,7 +69,8 @@ namespace Kniffel
                 }
             }
 
-            lbPlayer.Text = "Player: " + spieler + "  Wurf:" + wurfzahl;
+            lbPlayer.Text = "Player: " + spieler;
+            lbwuerfe.Text =   "Wurf: " + wurfzahl;
         }
 
         private void KniffelSpiel_FormClosing(object sender, FormClosingEventArgs e)
@@ -138,13 +143,12 @@ namespace Kniffel
                 pbstatus5.BackColor = Color.Lime;
             }
         }
-
         #endregion
 
 
         public void wuerfeln()
         {
-            //
+            //überprüfe ob würfel gesperrt ist und wenn nicht würfle Zahle erneut und lade "letzderwurf" mit neuem wurf
             List<int> ergebnis = new List<int>();
             for (int i = 0; i < 5; i++)
             {
@@ -157,13 +161,12 @@ namespace Kniffel
                     ergebnis.Add(zufall.Next(1, 7));
                 }
             }
-
             letzterwurf = ergebnis;
 
-
+            //Lade neue Bilder
             erneuerBilder(ergebnis);
 
-
+            //Bereinige Liste und lade sie mit neuen Daten
             cbmöglichkeiten.Items.Clear();
             foreach (würfe w in pruefe(ergebnis))
             {
@@ -217,7 +220,6 @@ namespace Kniffel
                 }
 
             }
-
             //Vierpasch
             for (int i = 0; i < 6; i++)
             {
@@ -228,45 +230,49 @@ namespace Kniffel
                 }
             }
             
-
-
             //kleine strasse
             if(
-                zahlen.Where(i => i == 4).Contains(1) &&
-                zahlen.Where(i => i == 4).Contains(2) &&
-                zahlen.Where(i => i == 4).Contains(3) &&
-                zahlen.Where(i => i == 4).Contains(4)
+                zahlen.Contains(1) &&
+                zahlen.Contains(2) &&
+                zahlen.Contains(3) &&
+                zahlen.Contains(4)
                 ||
-                zahlen.Where(i => i == 4).Contains(2) &&
-                zahlen.Where(i => i == 4).Contains(3) &&
-                zahlen.Where(i => i == 4).Contains(4) &&
-                zahlen.Where(i => i == 4).Contains(5) 
+                zahlen.Contains(2) &&
+                zahlen.Contains(3) &&
+                zahlen.Contains(4) &&
+                zahlen.Contains(5) 
                 ||
-                zahlen.Where(i => i == 4).Contains(3) &&
-                zahlen.Where(i => i == 4).Contains(4) &&
-                zahlen.Where(i => i == 4).Contains(5) &&
-                zahlen.Where(i => i == 4).Contains(6)
+                zahlen.Contains(3) &&
+                zahlen.Contains(4) &&
+                zahlen.Contains(5) &&
+                zahlen.Contains(6)
                 )
             {
-                resultat.Add(würfe.kleiestrasse);
+                resultat.Add(würfe.kleinestrasse);
             }
 
             //grosse strasse
             if (
-                zahlen.Where(i => i == 4).Contains(1) &&
-                zahlen.Where(i => i == 4).Contains(2) &&
-                zahlen.Where(i => i == 4).Contains(3) &&
-                zahlen.Where(i => i == 4).Contains(4) &&
-                zahlen.Where(i => i == 4).Contains(5)
+                zahlen.Contains(1) &&
+                zahlen.Contains(2) &&
+                zahlen.Contains(3) &&
+                zahlen.Contains(4) &&
+                zahlen.Contains(5)
                 ||
-                zahlen.Where(i => i == 4).Contains(2) &&
-                zahlen.Where(i => i == 4).Contains(3) &&
-                zahlen.Where(i => i == 4).Contains(4) &&
-                zahlen.Where(i => i == 4).Contains(5) &&
-                zahlen.Where(i => i == 4).Contains(6)
+                zahlen.Contains(2) &&
+                zahlen.Contains(3) &&
+                zahlen.Contains(4) &&
+                zahlen.Contains(5) &&
+                zahlen.Contains(6)
                 )
             {
-                resultat.Add(würfe.grossestrase);
+                resultat.Add(würfe.grossestrasse);
+            }
+
+            //überprüfe ob Liste leer ist
+            if (resultat.Count <= 0)
+            {
+                resultat.Add(würfe.fehler);
             }
 
 
@@ -275,7 +281,7 @@ namespace Kniffel
         
         public void erneuerBilder(List<int> zahlen)
         {
-            if (zahlen.Count > 0)
+            if (zahlen.Count <= 0)
             {
                 lbzahl1.Text = 0.ToString();
                 lbzahl2.Text = 0.ToString();
@@ -291,9 +297,6 @@ namespace Kniffel
             lbzahl4.Text = zahlen.ElementAt(3).ToString();
             lbzahl5.Text = zahlen.ElementAt(4).ToString();
         }
-
-
-
 
     }
 }

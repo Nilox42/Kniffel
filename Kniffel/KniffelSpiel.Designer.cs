@@ -93,10 +93,10 @@ namespace Kniffel
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tbSp3Dreier = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbSp3Zweier = new System.Windows.Forms.TextBox();
+            this.tbSp3Einer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -130,6 +130,8 @@ namespace Kniffel
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.lbPlayer = new System.Windows.Forms.Label();
+            this.lbwuerfe = new System.Windows.Forms.Label();
+            this.btwürfeln = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl2)).BeginInit();
@@ -408,7 +410,7 @@ namespace Kniffel
             // pbzahl1
             // 
             this.pbzahl1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pbzahl1.Location = new System.Drawing.Point(33, 243);
+            this.pbzahl1.Location = new System.Drawing.Point(31, 248);
             this.pbzahl1.Name = "pbzahl1";
             this.pbzahl1.Size = new System.Drawing.Size(50, 50);
             this.pbzahl1.TabIndex = 39;
@@ -418,7 +420,7 @@ namespace Kniffel
             // pbzahl2
             // 
             this.pbzahl2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pbzahl2.Location = new System.Drawing.Point(89, 243);
+            this.pbzahl2.Location = new System.Drawing.Point(87, 248);
             this.pbzahl2.Name = "pbzahl2";
             this.pbzahl2.Size = new System.Drawing.Size(50, 50);
             this.pbzahl2.TabIndex = 40;
@@ -428,7 +430,7 @@ namespace Kniffel
             // pbzahl3
             // 
             this.pbzahl3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pbzahl3.Location = new System.Drawing.Point(145, 243);
+            this.pbzahl3.Location = new System.Drawing.Point(143, 248);
             this.pbzahl3.Name = "pbzahl3";
             this.pbzahl3.Size = new System.Drawing.Size(50, 50);
             this.pbzahl3.TabIndex = 41;
@@ -438,7 +440,7 @@ namespace Kniffel
             // pbzahl5
             // 
             this.pbzahl5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pbzahl5.Location = new System.Drawing.Point(257, 243);
+            this.pbzahl5.Location = new System.Drawing.Point(255, 248);
             this.pbzahl5.Name = "pbzahl5";
             this.pbzahl5.Size = new System.Drawing.Size(50, 50);
             this.pbzahl5.TabIndex = 43;
@@ -448,7 +450,7 @@ namespace Kniffel
             // pbzahl4
             // 
             this.pbzahl4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pbzahl4.Location = new System.Drawing.Point(201, 243);
+            this.pbzahl4.Location = new System.Drawing.Point(199, 248);
             this.pbzahl4.Name = "pbzahl4";
             this.pbzahl4.Size = new System.Drawing.Size(50, 50);
             this.pbzahl4.TabIndex = 42;
@@ -459,7 +461,7 @@ namespace Kniffel
             // 
             this.pbwuerfel.BackgroundImage = global::Kniffel.Properties.Resources.knobelbecher_würfelbecher2;
             this.pbwuerfel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbwuerfel.Location = new System.Drawing.Point(89, 86);
+            this.pbwuerfel.Location = new System.Drawing.Point(12, 12);
             this.pbwuerfel.Name = "pbwuerfel";
             this.pbwuerfel.Size = new System.Drawing.Size(161, 151);
             this.pbwuerfel.TabIndex = 44;
@@ -469,7 +471,7 @@ namespace Kniffel
             // lbzahl1
             // 
             this.lbzahl1.AutoSize = true;
-            this.lbzahl1.Location = new System.Drawing.Point(50, 243);
+            this.lbzahl1.Location = new System.Drawing.Point(48, 248);
             this.lbzahl1.Name = "lbzahl1";
             this.lbzahl1.Size = new System.Drawing.Size(13, 13);
             this.lbzahl1.TabIndex = 45;
@@ -478,7 +480,7 @@ namespace Kniffel
             // lbzahl2
             // 
             this.lbzahl2.AutoSize = true;
-            this.lbzahl2.Location = new System.Drawing.Point(103, 243);
+            this.lbzahl2.Location = new System.Drawing.Point(101, 248);
             this.lbzahl2.Name = "lbzahl2";
             this.lbzahl2.Size = new System.Drawing.Size(13, 13);
             this.lbzahl2.TabIndex = 46;
@@ -487,7 +489,7 @@ namespace Kniffel
             // lbzahl3
             // 
             this.lbzahl3.AutoSize = true;
-            this.lbzahl3.Location = new System.Drawing.Point(158, 243);
+            this.lbzahl3.Location = new System.Drawing.Point(156, 248);
             this.lbzahl3.Name = "lbzahl3";
             this.lbzahl3.Size = new System.Drawing.Size(13, 13);
             this.lbzahl3.TabIndex = 47;
@@ -496,7 +498,7 @@ namespace Kniffel
             // lbzahl4
             // 
             this.lbzahl4.AutoSize = true;
-            this.lbzahl4.Location = new System.Drawing.Point(219, 243);
+            this.lbzahl4.Location = new System.Drawing.Point(217, 248);
             this.lbzahl4.Name = "lbzahl4";
             this.lbzahl4.Size = new System.Drawing.Size(13, 13);
             this.lbzahl4.TabIndex = 48;
@@ -505,7 +507,7 @@ namespace Kniffel
             // lbzahl5
             // 
             this.lbzahl5.AutoSize = true;
-            this.lbzahl5.Location = new System.Drawing.Point(274, 243);
+            this.lbzahl5.Location = new System.Drawing.Point(272, 248);
             this.lbzahl5.Name = "lbzahl5";
             this.lbzahl5.Size = new System.Drawing.Size(13, 13);
             this.lbzahl5.TabIndex = 49;
@@ -514,7 +516,7 @@ namespace Kniffel
             // cbmöglichkeiten
             // 
             this.cbmöglichkeiten.FormattingEnabled = true;
-            this.cbmöglichkeiten.Location = new System.Drawing.Point(33, 316);
+            this.cbmöglichkeiten.Location = new System.Drawing.Point(31, 321);
             this.cbmöglichkeiten.Name = "cbmöglichkeiten";
             this.cbmöglichkeiten.Size = new System.Drawing.Size(274, 21);
             this.cbmöglichkeiten.TabIndex = 50;
@@ -522,7 +524,7 @@ namespace Kniffel
             // pbstatus1
             // 
             this.pbstatus1.BackColor = System.Drawing.Color.Lime;
-            this.pbstatus1.Location = new System.Drawing.Point(33, 299);
+            this.pbstatus1.Location = new System.Drawing.Point(31, 304);
             this.pbstatus1.Name = "pbstatus1";
             this.pbstatus1.Size = new System.Drawing.Size(50, 10);
             this.pbstatus1.TabIndex = 51;
@@ -531,7 +533,7 @@ namespace Kniffel
             // pbstatus2
             // 
             this.pbstatus2.BackColor = System.Drawing.Color.Lime;
-            this.pbstatus2.Location = new System.Drawing.Point(89, 299);
+            this.pbstatus2.Location = new System.Drawing.Point(87, 304);
             this.pbstatus2.Name = "pbstatus2";
             this.pbstatus2.Size = new System.Drawing.Size(50, 10);
             this.pbstatus2.TabIndex = 52;
@@ -540,7 +542,7 @@ namespace Kniffel
             // pbstatus3
             // 
             this.pbstatus3.BackColor = System.Drawing.Color.Lime;
-            this.pbstatus3.Location = new System.Drawing.Point(145, 299);
+            this.pbstatus3.Location = new System.Drawing.Point(143, 304);
             this.pbstatus3.Name = "pbstatus3";
             this.pbstatus3.Size = new System.Drawing.Size(50, 10);
             this.pbstatus3.TabIndex = 53;
@@ -549,7 +551,7 @@ namespace Kniffel
             // pbstatus4
             // 
             this.pbstatus4.BackColor = System.Drawing.Color.Lime;
-            this.pbstatus4.Location = new System.Drawing.Point(201, 299);
+            this.pbstatus4.Location = new System.Drawing.Point(199, 304);
             this.pbstatus4.Name = "pbstatus4";
             this.pbstatus4.Size = new System.Drawing.Size(50, 10);
             this.pbstatus4.TabIndex = 54;
@@ -558,7 +560,7 @@ namespace Kniffel
             // pbstatus5
             // 
             this.pbstatus5.BackColor = System.Drawing.Color.Lime;
-            this.pbstatus5.Location = new System.Drawing.Point(257, 299);
+            this.pbstatus5.Location = new System.Drawing.Point(255, 304);
             this.pbstatus5.Name = "pbstatus5";
             this.pbstatus5.Size = new System.Drawing.Size(50, 10);
             this.pbstatus5.TabIndex = 55;
@@ -650,12 +652,12 @@ namespace Kniffel
             this.textBox10.Size = new System.Drawing.Size(76, 20);
             this.textBox10.TabIndex = 60;
             // 
-            // textBox11
+            // tbSp3Dreier
             // 
-            this.textBox11.Location = new System.Drawing.Point(634, 145);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(76, 20);
-            this.textBox11.TabIndex = 59;
+            this.tbSp3Dreier.Location = new System.Drawing.Point(634, 145);
+            this.tbSp3Dreier.Name = "tbSp3Dreier";
+            this.tbSp3Dreier.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Dreier.TabIndex = 59;
             // 
             // textBox12
             // 
@@ -664,19 +666,19 @@ namespace Kniffel
             this.textBox12.Size = new System.Drawing.Size(76, 20);
             this.textBox12.TabIndex = 58;
             // 
-            // textBox13
+            // tbSp3Zweier
             // 
-            this.textBox13.Location = new System.Drawing.Point(634, 112);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(76, 20);
-            this.textBox13.TabIndex = 57;
+            this.tbSp3Zweier.Location = new System.Drawing.Point(634, 112);
+            this.tbSp3Zweier.Name = "tbSp3Zweier";
+            this.tbSp3Zweier.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Zweier.TabIndex = 57;
             // 
-            // textBox14
+            // tbSp3Einer
             // 
-            this.textBox14.Location = new System.Drawing.Point(634, 76);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(76, 20);
-            this.textBox14.TabIndex = 56;
+            this.tbSp3Einer.Location = new System.Drawing.Point(634, 76);
+            this.tbSp3Einer.Name = "tbSp3Einer";
+            this.tbSp3Einer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Einer.TabIndex = 56;
             // 
             // label3
             // 
@@ -908,18 +910,39 @@ namespace Kniffel
             // 
             // lbPlayer
             // 
-            this.lbPlayer.Location = new System.Drawing.Point(30, 46);
+            this.lbPlayer.Location = new System.Drawing.Point(200, 76);
             this.lbPlayer.Name = "lbPlayer";
-            this.lbPlayer.Size = new System.Drawing.Size(277, 23);
+            this.lbPlayer.Size = new System.Drawing.Size(49, 23);
             this.lbPlayer.TabIndex = 104;
-            this.lbPlayer.Text = "Player: 0";
-            this.lbPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbPlayer.Text = "Player:";
+            this.lbPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbwuerfe
+            // 
+            this.lbwuerfe.Location = new System.Drawing.Point(200, 99);
+            this.lbwuerfe.Name = "lbwuerfe";
+            this.lbwuerfe.Size = new System.Drawing.Size(52, 23);
+            this.lbwuerfe.TabIndex = 105;
+            this.lbwuerfe.Text = "Wurf:";
+            this.lbwuerfe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btwürfeln
+            // 
+            this.btwürfeln.Location = new System.Drawing.Point(88, 178);
+            this.btwürfeln.Name = "btwürfeln";
+            this.btwürfeln.Size = new System.Drawing.Size(161, 55);
+            this.btwürfeln.TabIndex = 106;
+            this.btwürfeln.Text = "Würfeln";
+            this.btwürfeln.UseVisualStyleBackColor = true;
+            this.btwürfeln.Click += new System.EventHandler(this.btwürfeln_Click);
             // 
             // KniffelSpiel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 644);
+            this.Controls.Add(this.btwürfeln);
+            this.Controls.Add(this.lbwuerfe);
             this.Controls.Add(this.lbPlayer);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -965,10 +988,10 @@ namespace Kniffel
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.tbSp3Dreier);
             this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.tbSp3Zweier);
+            this.Controls.Add(this.tbSp3Einer);
             this.Controls.Add(this.pbstatus5);
             this.Controls.Add(this.pbstatus4);
             this.Controls.Add(this.pbstatus3);
@@ -1108,10 +1131,10 @@ namespace Kniffel
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbSp3Dreier;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox tbSp3Zweier;
+        private System.Windows.Forms.TextBox tbSp3Einer;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox15;
@@ -1145,5 +1168,7 @@ namespace Kniffel
         private System.Windows.Forms.TextBox textBox41;
         private System.Windows.Forms.TextBox textBox42;
         private System.Windows.Forms.Label lbPlayer;
+        private System.Windows.Forms.Label lbwuerfe;
+        private System.Windows.Forms.Button btwürfeln;
     }
 }
