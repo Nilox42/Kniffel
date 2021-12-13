@@ -31,6 +31,5 @@ namespace Kniffel
         public List<List<int>> letzewuerfe = new List<List<int>>();
 
         
-
     }
 }

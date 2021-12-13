@@ -51,100 +51,74 @@ namespace Kniffel
         }
         private void btwürfeln_Click(object sender, EventArgs e)
         {
+            bereiteWurfvor();
+        }
+
+        private void KniffelSpiel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            hauptmenü.zerstöreSpiel();
+        }
+
+        private void pbzahl1_Click(object sender, EventArgs e)
+        {
+            wechselStatus(0);    
+        }
+        private void pbzahl2_Click(object sender, EventArgs e)
+        {
+            wechselStatus(1);
+        }
+        private void pbzahl3_Click(object sender, EventArgs e)
+        {
+            wechselStatus(2);
+        }
+        private void pbzahl4_Click(object sender, EventArgs e)
+        {
+            wechselStatus(3);
+        }
+        private void pbzahl5_Click(object sender, EventArgs e)
+        {
+            wechselStatus(4);
+        }
+        #endregion
+
+        public void bereiteWurfvor()
+        {
             wurfzahl++;
             if (wurfzahl < 4)
             {
-
                 wuerfeln();
 
+                if (wurfzahl == 3) //Beim letzten wurf
+                {
+                    btwürfeln.Text = "Weiter";
+                }
             }
             else
             {
+                //Setze alle würfel zurück
+                for (int i = 0; i < 5; i++)
+                {
+                    würfelstatus[i] = true;
+                }
+                letzterwurf.Clear();
+
                 wurfzahl = 0;
                 spieler++;
                 if (spieler > spieleranzahl)
                 {
                     spieler = 1;
-                    erneuerBilder(new List<int>());
                 }
+
+                cbmöglichkeiten.Items.Clear();
+                erneuereText(new List<int>());
+                erneuereBilder();
+
+                btwürfeln.Text = "Würfeln";
             }
 
             lbPlayer.Text = "Player: " + spieler;
-            lbwuerfe.Text =   "Wurf: " + wurfzahl;
+            lbwuerfe.Text = "Wurf: " + wurfzahl;
         }
-
-        private void KniffelSpiel_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void pbzahl1_Click(object sender, EventArgs e)
-        {
-            if (würfelstatus[0])
-            {
-                würfelstatus[0] = false;
-                pbstatus1.BackColor = Color.Red;
-            }
-            else
-            {
-                würfelstatus[0] = true;
-                pbstatus1.BackColor = Color.Lime;
-            }
-        }
-        private void pbzahl2_Click(object sender, EventArgs e)
-        {
-            if (würfelstatus[1])
-            {
-                würfelstatus[1] = false;
-                pbstatus2.BackColor = Color.Red;
-            }
-            else
-            {
-                würfelstatus[1] = true;
-                pbstatus2.BackColor = Color.Lime;
-            }
-        }
-        private void pbzahl3_Click(object sender, EventArgs e)
-        {
-            if (würfelstatus[2])
-            {
-                würfelstatus[2] = false;
-                pbstatus3.BackColor = Color.Red;
-            }
-            else
-            {
-                würfelstatus[2] = true;
-                pbstatus3.BackColor = Color.Lime;
-            }
-        }
-        private void pbzahl4_Click(object sender, EventArgs e)
-        {
-            if (würfelstatus[3])
-            {
-                würfelstatus[3] = false;
-                pbstatus4.BackColor = Color.Red;
-            }
-            else
-            {
-                würfelstatus[3] = true;
-                pbstatus4.BackColor = Color.Lime;
-            }
-        }
-        private void pbzahl5_Click(object sender, EventArgs e)
-        {
-            if (würfelstatus[4])
-            {
-                würfelstatus[4] = false;
-                pbstatus5.BackColor = Color.Red;
-            }
-            else
-            {
-                würfelstatus[4] = true;
-                pbstatus5.BackColor = Color.Lime;
-            }
-        }
-        #endregion
-
 
         public void wuerfeln()
         {
@@ -164,10 +138,11 @@ namespace Kniffel
             letzterwurf = ergebnis;
 
             //Lade neue Bilder
-            erneuerBilder(ergebnis);
+            erneuereText(ergebnis);
 
             //Bereinige Liste und lade sie mit neuen Daten
             cbmöglichkeiten.Items.Clear();
+
             foreach (würfe w in pruefe(ergebnis))
             {
                 cbmöglichkeiten.Items.Add(w.ToString());
@@ -279,7 +254,7 @@ namespace Kniffel
             return resultat;
         }
         
-        public void erneuerBilder(List<int> zahlen)
+        public void erneuereText(List<int> zahlen)
         {
             if (zahlen.Count <= 0)
             {
@@ -296,6 +271,99 @@ namespace Kniffel
             lbzahl3.Text = zahlen.ElementAt(2).ToString();
             lbzahl4.Text = zahlen.ElementAt(3).ToString();
             lbzahl5.Text = zahlen.ElementAt(4).ToString();
+
+            erneuereBilder();
+        }
+
+        //Geht über alle würfel und setzt die faben jenachdem ob der würfel würfelbar ist oder nicht
+        public void erneuereBilder()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        {
+                            if (würfelstatus[0])
+                            {
+                                pbstatus1.BackColor = Color.Lime;
+                            }
+                            else
+                            {
+                                pbstatus1.BackColor = Color.Red;
+                            }
+
+                            break;
+                        }
+                    case 1:
+                        {
+                            if (würfelstatus[1])
+                            {
+                                pbstatus2.BackColor = Color.Lime;
+                            }
+                            else
+                            {
+                                pbstatus2.BackColor = Color.Red;
+                            }
+
+                            break;
+                        }
+                    case 2:
+                        {
+                            if (würfelstatus[2])
+                            {
+                                pbstatus3.BackColor = Color.Lime;
+                            }
+                            else
+                            {
+                                pbstatus3.BackColor = Color.Red;
+                            }
+
+                            break;
+                        }
+                    case 3:
+                        {
+                            if (würfelstatus[3])
+                            {
+                                pbstatus4.BackColor = Color.Lime;
+                            }
+                            else
+                            {
+                                pbstatus4.BackColor = Color.Red;
+                            }
+
+                            break;
+                        }
+                    case 4:
+                        {
+                            if (würfelstatus[4])
+                            {
+                                pbstatus5.BackColor = Color.Lime;
+                            }
+                            else
+                            {
+                                pbstatus5.BackColor = Color.Red;
+                            }
+
+                            break;
+                        }
+                }
+                
+            }
+        }
+
+        public void wechselStatus(int i)
+        {
+            if (würfelstatus[i])
+            {
+                würfelstatus[i] = false;
+            }
+            else
+            {
+                würfelstatus[i] = true;
+            }
+
+            erneuereBilder();
         }
 
     }

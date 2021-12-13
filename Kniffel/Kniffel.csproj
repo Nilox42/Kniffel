@@ -61,28 +61,28 @@
     <Compile Include="KniffelSpiel.Designer.cs">
       <DependentUpon>KniffelSpiel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kniffel 2 Spieler.cs">
+    <Compile Include="Old\Kniffel 2 Spieler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kniffel 2 Spieler.Designer.cs">
+    <Compile Include="Old\Kniffel 2 Spieler.Designer.cs">
       <DependentUpon>Kniffel 2 Spieler.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kniffel 3 Spieler.cs">
+    <Compile Include="Old\Kniffel 3 Spieler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kniffel 3 Spieler.Designer.cs">
+    <Compile Include="Old\Kniffel 3 Spieler.Designer.cs">
       <DependentUpon>Kniffel 3 Spieler.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kniffel 4 Spieler.cs">
+    <Compile Include="Old\Kniffel 4 Spieler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kniffel 4 Spieler.Designer.cs">
+    <Compile Include="Old\Kniffel 4 Spieler.Designer.cs">
       <DependentUpon>Kniffel 4 Spieler.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kniffel 5 Spieler.cs">
+    <Compile Include="Old\Kniffel 5 Spieler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kniffel 5 Spieler.Designer.cs">
+    <Compile Include="Old\Kniffel 5 Spieler.Designer.cs">
       <DependentUpon>Kniffel 5 Spieler.cs</DependentUpon>
     </Compile>
     <Compile Include="Kniffel Regeln.cs">
@@ -100,16 +100,16 @@
     <EmbeddedResource Include="KniffelSpiel.resx">
       <DependentUpon>KniffelSpiel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kniffel 2 Spieler.resx">
+    <EmbeddedResource Include="Old\Kniffel 2 Spieler.resx">
       <DependentUpon>Kniffel 2 Spieler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kniffel 3 Spieler.resx">
+    <EmbeddedResource Include="Old\Kniffel 3 Spieler.resx">
       <DependentUpon>Kniffel 3 Spieler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kniffel 4 Spieler.resx">
+    <EmbeddedResource Include="Old\Kniffel 4 Spieler.resx">
       <DependentUpon>Kniffel 4 Spieler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kniffel 5 Spieler.resx">
+    <EmbeddedResource Include="Old\Kniffel 5 Spieler.resx">
       <DependentUpon>Kniffel 5 Spieler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kniffel Regeln.resx">

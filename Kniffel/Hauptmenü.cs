@@ -65,6 +65,18 @@ namespace Kniffel
             this.Hide();
         }
 
+        //Überprüfe ob kniffelSpiel existier (also nicht NULL ist) und wenn es existier schlise die form und setzte die referenz/variable auf NULL (NULL = existiert nicht)
+        public void zerstöreSpiel()
+        {
+            if (kniffelSpiel != null)
+            {
+                kniffelSpiel.Dispose();
+                kniffelSpiel = null;
+            }
+
+            this.Show();
+        }
+
         
 
     }
