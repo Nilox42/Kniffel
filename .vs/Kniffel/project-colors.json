@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "afc791b0-aef2-43fd-9fe0-5f18aa52ffee": {
+      "ProjectGuid": "afc791b0-aef2-43fd-9fe0-5f18aa52ffee",
+      "DisplayName": "Kniffel",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

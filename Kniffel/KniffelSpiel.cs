@@ -80,7 +80,9 @@ namespace Kniffel
             wechselStatus(4);
         }
         #endregion
-
+        //Incrementiere wurfzahl und teste ob 3 würfe gemacht wurden
+        //Wenn weniger als 3 würfe gemacht wurden würfel
+        //Wenn schon 3 würfe gemacht wurden dann setze alles zurück und wähle den nächsten spieler aus
         public void bereiteWurfvor()
         {
             wurfzahl++;
