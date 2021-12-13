@@ -31,7 +31,6 @@ namespace Kniffel
         {
             this.btHauptmenue = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btRegeln = new System.Windows.Forms.Button();
             this.tbSp1Einer = new System.Windows.Forms.TextBox();
             this.tbSp1Zweier = new System.Windows.Forms.TextBox();
             this.tbSp1Dreier = new System.Windows.Forms.TextBox();
@@ -81,54 +80,54 @@ namespace Kniffel
             this.pbstatus3 = new System.Windows.Forms.PictureBox();
             this.pbstatus4 = new System.Windows.Forms.PictureBox();
             this.pbstatus5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.lbSp3Gesammtsumme = new System.Windows.Forms.Label();
+            this.lbSp3SummeOben = new System.Windows.Forms.Label();
+            this.tbSp3Bonus = new System.Windows.Forms.TextBox();
+            this.tbSp3Dreierpasch = new System.Windows.Forms.TextBox();
+            this.tbSp3Viererpasch = new System.Windows.Forms.TextBox();
+            this.tbSp3FullHouse = new System.Windows.Forms.TextBox();
+            this.tbSp3KleineStraße = new System.Windows.Forms.TextBox();
+            this.tbSp3GroßeStraße = new System.Windows.Forms.TextBox();
+            this.tbSp3Kniffel = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbSp3Fünfer = new System.Windows.Forms.TextBox();
+            this.tbSp3Sechser = new System.Windows.Forms.TextBox();
             this.tbSp3Dreier = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbSp3Vierer = new System.Windows.Forms.TextBox();
             this.tbSp3Zweier = new System.Windows.Forms.TextBox();
             this.tbSp3Einer = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.lbSp4Gesammtsumme = new System.Windows.Forms.Label();
+            this.lbSp4SummeOben = new System.Windows.Forms.Label();
+            this.tbSp4Bonus = new System.Windows.Forms.TextBox();
+            this.tbSp4Dreierpasch = new System.Windows.Forms.TextBox();
+            this.tbSp4Viererpasch = new System.Windows.Forms.TextBox();
+            this.tbSp4FullHouse = new System.Windows.Forms.TextBox();
+            this.tbSp4KleineStraße = new System.Windows.Forms.TextBox();
+            this.tbSp4GroßeStraße = new System.Windows.Forms.TextBox();
+            this.tbSp4Kniffel = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.tbSp4Fünfer = new System.Windows.Forms.TextBox();
+            this.tbSp4Sechser = new System.Windows.Forms.TextBox();
+            this.tbSp4Dreier = new System.Windows.Forms.TextBox();
+            this.tbSp4Vierer = new System.Windows.Forms.TextBox();
+            this.tbSp4Zweier = new System.Windows.Forms.TextBox();
+            this.tbSp4Einer = new System.Windows.Forms.TextBox();
+            this.lbSp5Gesammtsumme = new System.Windows.Forms.Label();
+            this.lbSp5SummeOben = new System.Windows.Forms.Label();
+            this.tbSp5Bonus = new System.Windows.Forms.TextBox();
+            this.tbSp5Dreierpasch = new System.Windows.Forms.TextBox();
+            this.tbSp5Viererpasch = new System.Windows.Forms.TextBox();
+            this.tbSp5FullHouse = new System.Windows.Forms.TextBox();
+            this.tbSp5KleineStraße = new System.Windows.Forms.TextBox();
+            this.tbSp5GroßeStraße = new System.Windows.Forms.TextBox();
+            this.tbSp5Kniffel = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.tbSp5Fünfer = new System.Windows.Forms.TextBox();
+            this.tbSp5Sechser = new System.Windows.Forms.TextBox();
+            this.tbSp5Dreier = new System.Windows.Forms.TextBox();
+            this.tbSp5Vierer = new System.Windows.Forms.TextBox();
+            this.tbSp5Zweier = new System.Windows.Forms.TextBox();
+            this.tbSp5Einer = new System.Windows.Forms.TextBox();
             this.lbPlayer = new System.Windows.Forms.Label();
             this.lbwuerfe = new System.Windows.Forms.Label();
             this.btwürfeln = new System.Windows.Forms.Button();
@@ -169,22 +168,13 @@ namespace Kniffel
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // btRegeln
-            // 
-            this.btRegeln.Location = new System.Drawing.Point(919, 41);
-            this.btRegeln.Name = "btRegeln";
-            this.btRegeln.Size = new System.Drawing.Size(75, 23);
-            this.btRegeln.TabIndex = 3;
-            this.btRegeln.Text = "Regeln";
-            this.btRegeln.UseVisualStyleBackColor = true;
-            this.btRegeln.Click += new System.EventHandler(this.btRegeln_Click);
-            // 
             // tbSp1Einer
             // 
             this.tbSp1Einer.Location = new System.Drawing.Point(465, 76);
             this.tbSp1Einer.Name = "tbSp1Einer";
             this.tbSp1Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Einer.TabIndex = 4;
+            this.tbSp1Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp1Zweier
             // 
@@ -192,6 +182,7 @@ namespace Kniffel
             this.tbSp1Zweier.Name = "tbSp1Zweier";
             this.tbSp1Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Zweier.TabIndex = 5;
+            this.tbSp1Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp1Dreier
             // 
@@ -199,6 +190,7 @@ namespace Kniffel
             this.tbSp1Dreier.Name = "tbSp1Dreier";
             this.tbSp1Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Dreier.TabIndex = 6;
+            this.tbSp1Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp1GroßeStraße
             // 
@@ -206,6 +198,7 @@ namespace Kniffel
             this.tbSp1GroßeStraße.Name = "tbSp1GroßeStraße";
             this.tbSp1GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp1GroßeStraße.TabIndex = 7;
+            this.tbSp1GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp1KleineStraße
             // 
@@ -213,6 +206,7 @@ namespace Kniffel
             this.tbSp1KleineStraße.Name = "tbSp1KleineStraße";
             this.tbSp1KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp1KleineStraße.TabIndex = 8;
+            this.tbSp1KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp1FullHouse
             // 
@@ -220,6 +214,7 @@ namespace Kniffel
             this.tbSp1FullHouse.Name = "tbSp1FullHouse";
             this.tbSp1FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp1FullHouse.TabIndex = 9;
+            this.tbSp1FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp1Viererpasch
             // 
@@ -227,6 +222,7 @@ namespace Kniffel
             this.tbSp1Viererpasch.Name = "tbSp1Viererpasch";
             this.tbSp1Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Viererpasch.TabIndex = 10;
+            this.tbSp1Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp1Dreierpasch
             // 
@@ -234,20 +230,23 @@ namespace Kniffel
             this.tbSp1Dreierpasch.Name = "tbSp1Dreierpasch";
             this.tbSp1Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Dreierpasch.TabIndex = 11;
+            this.tbSp1Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp1Bonus
             // 
             this.tbSp1Bonus.Location = new System.Drawing.Point(467, 318);
             this.tbSp1Bonus.Name = "tbSp1Bonus";
+            this.tbSp1Bonus.ReadOnly = true;
             this.tbSp1Bonus.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Bonus.TabIndex = 12;
             // 
             // tbSp1Sechser
             // 
-            this.tbSp1Sechser.Location = new System.Drawing.Point(467, 243);
+            this.tbSp1Sechser.Location = new System.Drawing.Point(465, 245);
             this.tbSp1Sechser.Name = "tbSp1Sechser";
             this.tbSp1Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Sechser.TabIndex = 14;
+            this.tbSp1Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp1Fünfer
             // 
@@ -255,6 +254,7 @@ namespace Kniffel
             this.tbSp1Fünfer.Name = "tbSp1Fünfer";
             this.tbSp1Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Fünfer.TabIndex = 15;
+            this.tbSp1Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp1Vierer
             // 
@@ -262,6 +262,7 @@ namespace Kniffel
             this.tbSp1Vierer.Name = "tbSp1Vierer";
             this.tbSp1Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Vierer.TabIndex = 16;
+            this.tbSp1Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp1Chance
             // 
@@ -276,6 +277,7 @@ namespace Kniffel
             this.tbSp1Kniffel.Name = "tbSp1Kniffel";
             this.tbSp1Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Kniffel.TabIndex = 19;
+            this.tbSp1Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2Einer
             // 
@@ -283,6 +285,7 @@ namespace Kniffel
             this.tbSp2Einer.Name = "tbSp2Einer";
             this.tbSp2Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Einer.TabIndex = 20;
+            this.tbSp2Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp2Zweier
             // 
@@ -290,6 +293,7 @@ namespace Kniffel
             this.tbSp2Zweier.Name = "tbSp2Zweier";
             this.tbSp2Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Zweier.TabIndex = 21;
+            this.tbSp2Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp2Vierer
             // 
@@ -297,6 +301,7 @@ namespace Kniffel
             this.tbSp2Vierer.Name = "tbSp2Vierer";
             this.tbSp2Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Vierer.TabIndex = 22;
+            this.tbSp2Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp2Dreier
             // 
@@ -304,6 +309,7 @@ namespace Kniffel
             this.tbSp2Dreier.Name = "tbSp2Dreier";
             this.tbSp2Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Dreier.TabIndex = 23;
+            this.tbSp2Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp2Sechser
             // 
@@ -311,6 +317,7 @@ namespace Kniffel
             this.tbSp2Sechser.Name = "tbSp2Sechser";
             this.tbSp2Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Sechser.TabIndex = 24;
+            this.tbSp2Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp2Fünfer
             // 
@@ -318,6 +325,7 @@ namespace Kniffel
             this.tbSp2Fünfer.Name = "tbSp2Fünfer";
             this.tbSp2Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Fünfer.TabIndex = 25;
+            this.tbSp2Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp2Chance
             // 
@@ -332,6 +340,7 @@ namespace Kniffel
             this.tbSp2Kniffel.Name = "tbSp2Kniffel";
             this.tbSp2Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Kniffel.TabIndex = 28;
+            this.tbSp2Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2GroßeStraße
             // 
@@ -339,6 +348,7 @@ namespace Kniffel
             this.tbSp2GroßeStraße.Name = "tbSp2GroßeStraße";
             this.tbSp2GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp2GroßeStraße.TabIndex = 29;
+            this.tbSp2GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2KleineStraße
             // 
@@ -346,6 +356,7 @@ namespace Kniffel
             this.tbSp2KleineStraße.Name = "tbSp2KleineStraße";
             this.tbSp2KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp2KleineStraße.TabIndex = 30;
+            this.tbSp2KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2FullHouse
             // 
@@ -353,6 +364,7 @@ namespace Kniffel
             this.tbSp2FullHouse.Name = "tbSp2FullHouse";
             this.tbSp2FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp2FullHouse.TabIndex = 31;
+            this.tbSp2FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2Viererpasch
             // 
@@ -360,6 +372,7 @@ namespace Kniffel
             this.tbSp2Viererpasch.Name = "tbSp2Viererpasch";
             this.tbSp2Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Viererpasch.TabIndex = 32;
+            this.tbSp2Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2Dreierpasch
             // 
@@ -367,18 +380,20 @@ namespace Kniffel
             this.tbSp2Dreierpasch.Name = "tbSp2Dreierpasch";
             this.tbSp2Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Dreierpasch.TabIndex = 33;
+            this.tbSp2Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // tbSp2Bonus
             // 
             this.tbSp2Bonus.Location = new System.Drawing.Point(549, 318);
             this.tbSp2Bonus.Name = "tbSp2Bonus";
+            this.tbSp2Bonus.ReadOnly = true;
             this.tbSp2Bonus.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Bonus.TabIndex = 34;
             // 
             // lbSp1SummeOben
             // 
             this.lbSp1SummeOben.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSp1SummeOben.Location = new System.Drawing.Point(467, 282);
+            this.lbSp1SummeOben.Location = new System.Drawing.Point(465, 282);
             this.lbSp1SummeOben.Name = "lbSp1SummeOben";
             this.lbSp1SummeOben.Size = new System.Drawing.Size(76, 20);
             this.lbSp1SummeOben.TabIndex = 35;
@@ -566,70 +581,77 @@ namespace Kniffel
             this.pbstatus5.TabIndex = 55;
             this.pbstatus5.TabStop = false;
             // 
-            // label1
+            // lbSp3Gesammtsumme
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(634, 588);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
-            this.label1.TabIndex = 71;
+            this.lbSp3Gesammtsumme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSp3Gesammtsumme.Location = new System.Drawing.Point(634, 588);
+            this.lbSp3Gesammtsumme.Name = "lbSp3Gesammtsumme";
+            this.lbSp3Gesammtsumme.Size = new System.Drawing.Size(76, 20);
+            this.lbSp3Gesammtsumme.TabIndex = 71;
             // 
-            // label2
+            // lbSp3SummeOben
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(634, 282);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
-            this.label2.TabIndex = 70;
+            this.lbSp3SummeOben.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSp3SummeOben.Location = new System.Drawing.Point(634, 282);
+            this.lbSp3SummeOben.Name = "lbSp3SummeOben";
+            this.lbSp3SummeOben.Size = new System.Drawing.Size(76, 20);
+            this.lbSp3SummeOben.TabIndex = 70;
             // 
-            // textBox1
+            // tbSp3Bonus
             // 
-            this.textBox1.Location = new System.Drawing.Point(634, 316);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 69;
+            this.tbSp3Bonus.Location = new System.Drawing.Point(634, 316);
+            this.tbSp3Bonus.Name = "tbSp3Bonus";
+            this.tbSp3Bonus.ReadOnly = true;
+            this.tbSp3Bonus.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Bonus.TabIndex = 69;
             // 
-            // textBox2
+            // tbSp3Dreierpasch
             // 
-            this.textBox2.Location = new System.Drawing.Point(634, 351);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 20);
-            this.textBox2.TabIndex = 68;
+            this.tbSp3Dreierpasch.Location = new System.Drawing.Point(634, 351);
+            this.tbSp3Dreierpasch.Name = "tbSp3Dreierpasch";
+            this.tbSp3Dreierpasch.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Dreierpasch.TabIndex = 68;
+            this.tbSp3Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox3
+            // tbSp3Viererpasch
             // 
-            this.textBox3.Location = new System.Drawing.Point(634, 383);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 67;
+            this.tbSp3Viererpasch.Location = new System.Drawing.Point(634, 383);
+            this.tbSp3Viererpasch.Name = "tbSp3Viererpasch";
+            this.tbSp3Viererpasch.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Viererpasch.TabIndex = 67;
+            this.tbSp3Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox4
+            // tbSp3FullHouse
             // 
-            this.textBox4.Location = new System.Drawing.Point(634, 418);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(76, 20);
-            this.textBox4.TabIndex = 66;
+            this.tbSp3FullHouse.Location = new System.Drawing.Point(634, 418);
+            this.tbSp3FullHouse.Name = "tbSp3FullHouse";
+            this.tbSp3FullHouse.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3FullHouse.TabIndex = 66;
+            this.tbSp3FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox5
+            // tbSp3KleineStraße
             // 
-            this.textBox5.Location = new System.Drawing.Point(634, 452);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(76, 20);
-            this.textBox5.TabIndex = 65;
+            this.tbSp3KleineStraße.Location = new System.Drawing.Point(634, 452);
+            this.tbSp3KleineStraße.Name = "tbSp3KleineStraße";
+            this.tbSp3KleineStraße.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3KleineStraße.TabIndex = 65;
+            this.tbSp3KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox6
+            // tbSp3GroßeStraße
             // 
-            this.textBox6.Location = new System.Drawing.Point(634, 486);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(76, 20);
-            this.textBox6.TabIndex = 64;
+            this.tbSp3GroßeStraße.Location = new System.Drawing.Point(634, 486);
+            this.tbSp3GroßeStraße.Name = "tbSp3GroßeStraße";
+            this.tbSp3GroßeStraße.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3GroßeStraße.TabIndex = 64;
+            this.tbSp3GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox7
+            // tbSp3Kniffel
             // 
-            this.textBox7.Location = new System.Drawing.Point(634, 519);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(76, 20);
-            this.textBox7.TabIndex = 63;
+            this.tbSp3Kniffel.Location = new System.Drawing.Point(634, 519);
+            this.tbSp3Kniffel.Name = "tbSp3Kniffel";
+            this.tbSp3Kniffel.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Kniffel.TabIndex = 63;
+            this.tbSp3Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // textBox8
             // 
@@ -638,19 +660,21 @@ namespace Kniffel
             this.textBox8.Size = new System.Drawing.Size(76, 20);
             this.textBox8.TabIndex = 62;
             // 
-            // textBox9
+            // tbSp3Fünfer
             // 
-            this.textBox9.Location = new System.Drawing.Point(634, 217);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(76, 20);
-            this.textBox9.TabIndex = 61;
+            this.tbSp3Fünfer.Location = new System.Drawing.Point(634, 217);
+            this.tbSp3Fünfer.Name = "tbSp3Fünfer";
+            this.tbSp3Fünfer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Fünfer.TabIndex = 61;
+            this.tbSp3Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox10
+            // tbSp3Sechser
             // 
-            this.textBox10.Location = new System.Drawing.Point(634, 247);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(76, 20);
-            this.textBox10.TabIndex = 60;
+            this.tbSp3Sechser.Location = new System.Drawing.Point(634, 247);
+            this.tbSp3Sechser.Name = "tbSp3Sechser";
+            this.tbSp3Sechser.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Sechser.TabIndex = 60;
+            this.tbSp3Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp3Dreier
             // 
@@ -658,13 +682,15 @@ namespace Kniffel
             this.tbSp3Dreier.Name = "tbSp3Dreier";
             this.tbSp3Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Dreier.TabIndex = 59;
+            this.tbSp3Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox12
+            // tbSp3Vierer
             // 
-            this.textBox12.Location = new System.Drawing.Point(634, 179);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(76, 20);
-            this.textBox12.TabIndex = 58;
+            this.tbSp3Vierer.Location = new System.Drawing.Point(634, 179);
+            this.tbSp3Vierer.Name = "tbSp3Vierer";
+            this.tbSp3Vierer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp3Vierer.TabIndex = 58;
+            this.tbSp3Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp3Zweier
             // 
@@ -672,6 +698,7 @@ namespace Kniffel
             this.tbSp3Zweier.Name = "tbSp3Zweier";
             this.tbSp3Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Zweier.TabIndex = 57;
+            this.tbSp3Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // tbSp3Einer
             // 
@@ -679,71 +706,79 @@ namespace Kniffel
             this.tbSp3Einer.Name = "tbSp3Einer";
             this.tbSp3Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Einer.TabIndex = 56;
+            this.tbSp3Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // label3
+            // lbSp4Gesammtsumme
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(723, 589);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
-            this.label3.TabIndex = 87;
+            this.lbSp4Gesammtsumme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSp4Gesammtsumme.Location = new System.Drawing.Point(723, 589);
+            this.lbSp4Gesammtsumme.Name = "lbSp4Gesammtsumme";
+            this.lbSp4Gesammtsumme.Size = new System.Drawing.Size(76, 20);
+            this.lbSp4Gesammtsumme.TabIndex = 87;
             // 
-            // label4
+            // lbSp4SummeOben
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(723, 282);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 20);
-            this.label4.TabIndex = 86;
+            this.lbSp4SummeOben.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSp4SummeOben.Location = new System.Drawing.Point(723, 282);
+            this.lbSp4SummeOben.Name = "lbSp4SummeOben";
+            this.lbSp4SummeOben.Size = new System.Drawing.Size(76, 20);
+            this.lbSp4SummeOben.TabIndex = 86;
             // 
-            // textBox15
+            // tbSp4Bonus
             // 
-            this.textBox15.Location = new System.Drawing.Point(723, 318);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(76, 20);
-            this.textBox15.TabIndex = 85;
+            this.tbSp4Bonus.Location = new System.Drawing.Point(723, 318);
+            this.tbSp4Bonus.Name = "tbSp4Bonus";
+            this.tbSp4Bonus.ReadOnly = true;
+            this.tbSp4Bonus.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Bonus.TabIndex = 85;
             // 
-            // textBox16
+            // tbSp4Dreierpasch
             // 
-            this.textBox16.Location = new System.Drawing.Point(723, 354);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(76, 20);
-            this.textBox16.TabIndex = 84;
+            this.tbSp4Dreierpasch.Location = new System.Drawing.Point(723, 354);
+            this.tbSp4Dreierpasch.Name = "tbSp4Dreierpasch";
+            this.tbSp4Dreierpasch.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Dreierpasch.TabIndex = 84;
+            this.tbSp4Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox17
+            // tbSp4Viererpasch
             // 
-            this.textBox17.Location = new System.Drawing.Point(723, 380);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(76, 20);
-            this.textBox17.TabIndex = 83;
+            this.tbSp4Viererpasch.Location = new System.Drawing.Point(723, 380);
+            this.tbSp4Viererpasch.Name = "tbSp4Viererpasch";
+            this.tbSp4Viererpasch.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Viererpasch.TabIndex = 83;
+            this.tbSp4Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox18
+            // tbSp4FullHouse
             // 
-            this.textBox18.Location = new System.Drawing.Point(723, 419);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(76, 20);
-            this.textBox18.TabIndex = 82;
+            this.tbSp4FullHouse.Location = new System.Drawing.Point(723, 419);
+            this.tbSp4FullHouse.Name = "tbSp4FullHouse";
+            this.tbSp4FullHouse.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4FullHouse.TabIndex = 82;
+            this.tbSp4FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox19
+            // tbSp4KleineStraße
             // 
-            this.textBox19.Location = new System.Drawing.Point(723, 454);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(76, 20);
-            this.textBox19.TabIndex = 81;
+            this.tbSp4KleineStraße.Location = new System.Drawing.Point(723, 454);
+            this.tbSp4KleineStraße.Name = "tbSp4KleineStraße";
+            this.tbSp4KleineStraße.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4KleineStraße.TabIndex = 81;
+            this.tbSp4KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox20
+            // tbSp4GroßeStraße
             // 
-            this.textBox20.Location = new System.Drawing.Point(723, 490);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(76, 20);
-            this.textBox20.TabIndex = 80;
+            this.tbSp4GroßeStraße.Location = new System.Drawing.Point(723, 490);
+            this.tbSp4GroßeStraße.Name = "tbSp4GroßeStraße";
+            this.tbSp4GroßeStraße.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4GroßeStraße.TabIndex = 80;
+            this.tbSp4GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox21
+            // tbSp4Kniffel
             // 
-            this.textBox21.Location = new System.Drawing.Point(723, 516);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(76, 20);
-            this.textBox21.TabIndex = 79;
+            this.tbSp4Kniffel.Location = new System.Drawing.Point(723, 516);
+            this.tbSp4Kniffel.Name = "tbSp4Kniffel";
+            this.tbSp4Kniffel.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Kniffel.TabIndex = 79;
+            this.tbSp4Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // textBox22
             // 
@@ -752,112 +787,125 @@ namespace Kniffel
             this.textBox22.Size = new System.Drawing.Size(76, 20);
             this.textBox22.TabIndex = 78;
             // 
-            // textBox23
+            // tbSp4Fünfer
             // 
-            this.textBox23.Location = new System.Drawing.Point(723, 217);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(76, 20);
-            this.textBox23.TabIndex = 77;
+            this.tbSp4Fünfer.Location = new System.Drawing.Point(723, 217);
+            this.tbSp4Fünfer.Name = "tbSp4Fünfer";
+            this.tbSp4Fünfer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Fünfer.TabIndex = 77;
+            this.tbSp4Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox24
+            // tbSp4Sechser
             // 
-            this.textBox24.Location = new System.Drawing.Point(723, 243);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(76, 20);
-            this.textBox24.TabIndex = 76;
+            this.tbSp4Sechser.Location = new System.Drawing.Point(723, 243);
+            this.tbSp4Sechser.Name = "tbSp4Sechser";
+            this.tbSp4Sechser.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Sechser.TabIndex = 76;
+            this.tbSp4Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox25
+            // tbSp4Dreier
             // 
-            this.textBox25.Location = new System.Drawing.Point(723, 142);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(76, 20);
-            this.textBox25.TabIndex = 75;
+            this.tbSp4Dreier.Location = new System.Drawing.Point(723, 142);
+            this.tbSp4Dreier.Name = "tbSp4Dreier";
+            this.tbSp4Dreier.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Dreier.TabIndex = 75;
+            this.tbSp4Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox26
+            // tbSp4Vierer
             // 
-            this.textBox26.Location = new System.Drawing.Point(723, 181);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(76, 20);
-            this.textBox26.TabIndex = 74;
+            this.tbSp4Vierer.Location = new System.Drawing.Point(723, 181);
+            this.tbSp4Vierer.Name = "tbSp4Vierer";
+            this.tbSp4Vierer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Vierer.TabIndex = 74;
+            this.tbSp4Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox27
+            // tbSp4Zweier
             // 
-            this.textBox27.Location = new System.Drawing.Point(723, 112);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(76, 20);
-            this.textBox27.TabIndex = 73;
+            this.tbSp4Zweier.Location = new System.Drawing.Point(723, 112);
+            this.tbSp4Zweier.Name = "tbSp4Zweier";
+            this.tbSp4Zweier.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Zweier.TabIndex = 73;
+            this.tbSp4Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox28
+            // tbSp4Einer
             // 
-            this.textBox28.Location = new System.Drawing.Point(723, 76);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(76, 20);
-            this.textBox28.TabIndex = 72;
+            this.tbSp4Einer.Location = new System.Drawing.Point(723, 76);
+            this.tbSp4Einer.Name = "tbSp4Einer";
+            this.tbSp4Einer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp4Einer.TabIndex = 72;
+            this.tbSp4Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // label5
+            // lbSp5Gesammtsumme
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(805, 589);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 20);
-            this.label5.TabIndex = 103;
+            this.lbSp5Gesammtsumme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSp5Gesammtsumme.Location = new System.Drawing.Point(805, 589);
+            this.lbSp5Gesammtsumme.Name = "lbSp5Gesammtsumme";
+            this.lbSp5Gesammtsumme.Size = new System.Drawing.Size(76, 20);
+            this.lbSp5Gesammtsumme.TabIndex = 103;
             // 
-            // label6
+            // lbSp5SummeOben
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(805, 282);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 20);
-            this.label6.TabIndex = 102;
+            this.lbSp5SummeOben.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSp5SummeOben.Location = new System.Drawing.Point(805, 282);
+            this.lbSp5SummeOben.Name = "lbSp5SummeOben";
+            this.lbSp5SummeOben.Size = new System.Drawing.Size(76, 20);
+            this.lbSp5SummeOben.TabIndex = 102;
             // 
-            // textBox29
+            // tbSp5Bonus
             // 
-            this.textBox29.Location = new System.Drawing.Point(805, 318);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(76, 20);
-            this.textBox29.TabIndex = 101;
+            this.tbSp5Bonus.Location = new System.Drawing.Point(805, 318);
+            this.tbSp5Bonus.Name = "tbSp5Bonus";
+            this.tbSp5Bonus.ReadOnly = true;
+            this.tbSp5Bonus.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Bonus.TabIndex = 101;
             // 
-            // textBox30
+            // tbSp5Dreierpasch
             // 
-            this.textBox30.Location = new System.Drawing.Point(805, 354);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(76, 20);
-            this.textBox30.TabIndex = 100;
+            this.tbSp5Dreierpasch.Location = new System.Drawing.Point(805, 354);
+            this.tbSp5Dreierpasch.Name = "tbSp5Dreierpasch";
+            this.tbSp5Dreierpasch.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Dreierpasch.TabIndex = 100;
+            this.tbSp5Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox31
+            // tbSp5Viererpasch
             // 
-            this.textBox31.Location = new System.Drawing.Point(805, 380);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(76, 20);
-            this.textBox31.TabIndex = 99;
+            this.tbSp5Viererpasch.Location = new System.Drawing.Point(805, 380);
+            this.tbSp5Viererpasch.Name = "tbSp5Viererpasch";
+            this.tbSp5Viererpasch.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Viererpasch.TabIndex = 99;
+            this.tbSp5Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox32
+            // tbSp5FullHouse
             // 
-            this.textBox32.Location = new System.Drawing.Point(805, 419);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(76, 20);
-            this.textBox32.TabIndex = 98;
+            this.tbSp5FullHouse.Location = new System.Drawing.Point(805, 419);
+            this.tbSp5FullHouse.Name = "tbSp5FullHouse";
+            this.tbSp5FullHouse.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5FullHouse.TabIndex = 98;
+            this.tbSp5FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox33
+            // tbSp5KleineStraße
             // 
-            this.textBox33.Location = new System.Drawing.Point(805, 454);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(76, 20);
-            this.textBox33.TabIndex = 97;
+            this.tbSp5KleineStraße.Location = new System.Drawing.Point(805, 454);
+            this.tbSp5KleineStraße.Name = "tbSp5KleineStraße";
+            this.tbSp5KleineStraße.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5KleineStraße.TabIndex = 97;
+            this.tbSp5KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox34
+            // tbSp5GroßeStraße
             // 
-            this.textBox34.Location = new System.Drawing.Point(805, 490);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(76, 20);
-            this.textBox34.TabIndex = 96;
+            this.tbSp5GroßeStraße.Location = new System.Drawing.Point(805, 490);
+            this.tbSp5GroßeStraße.Name = "tbSp5GroßeStraße";
+            this.tbSp5GroßeStraße.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5GroßeStraße.TabIndex = 96;
+            this.tbSp5GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
-            // textBox35
+            // tbSp5Kniffel
             // 
-            this.textBox35.Location = new System.Drawing.Point(805, 516);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(76, 20);
-            this.textBox35.TabIndex = 95;
+            this.tbSp5Kniffel.Location = new System.Drawing.Point(805, 516);
+            this.tbSp5Kniffel.Name = "tbSp5Kniffel";
+            this.tbSp5Kniffel.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Kniffel.TabIndex = 95;
+            this.tbSp5Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
             // 
             // textBox36
             // 
@@ -866,47 +914,53 @@ namespace Kniffel
             this.textBox36.Size = new System.Drawing.Size(76, 20);
             this.textBox36.TabIndex = 94;
             // 
-            // textBox37
+            // tbSp5Fünfer
             // 
-            this.textBox37.Location = new System.Drawing.Point(805, 217);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(76, 20);
-            this.textBox37.TabIndex = 93;
+            this.tbSp5Fünfer.Location = new System.Drawing.Point(805, 217);
+            this.tbSp5Fünfer.Name = "tbSp5Fünfer";
+            this.tbSp5Fünfer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Fünfer.TabIndex = 93;
+            this.tbSp5Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox38
+            // tbSp5Sechser
             // 
-            this.textBox38.Location = new System.Drawing.Point(805, 243);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(76, 20);
-            this.textBox38.TabIndex = 92;
+            this.tbSp5Sechser.Location = new System.Drawing.Point(805, 243);
+            this.tbSp5Sechser.Name = "tbSp5Sechser";
+            this.tbSp5Sechser.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Sechser.TabIndex = 92;
+            this.tbSp5Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox39
+            // tbSp5Dreier
             // 
-            this.textBox39.Location = new System.Drawing.Point(805, 142);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(76, 20);
-            this.textBox39.TabIndex = 91;
+            this.tbSp5Dreier.Location = new System.Drawing.Point(805, 142);
+            this.tbSp5Dreier.Name = "tbSp5Dreier";
+            this.tbSp5Dreier.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Dreier.TabIndex = 91;
+            this.tbSp5Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox40
+            // tbSp5Vierer
             // 
-            this.textBox40.Location = new System.Drawing.Point(805, 181);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(76, 20);
-            this.textBox40.TabIndex = 90;
+            this.tbSp5Vierer.Location = new System.Drawing.Point(805, 181);
+            this.tbSp5Vierer.Name = "tbSp5Vierer";
+            this.tbSp5Vierer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Vierer.TabIndex = 90;
+            this.tbSp5Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox41
+            // tbSp5Zweier
             // 
-            this.textBox41.Location = new System.Drawing.Point(805, 112);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(76, 20);
-            this.textBox41.TabIndex = 89;
+            this.tbSp5Zweier.Location = new System.Drawing.Point(805, 112);
+            this.tbSp5Zweier.Name = "tbSp5Zweier";
+            this.tbSp5Zweier.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Zweier.TabIndex = 89;
+            this.tbSp5Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
-            // textBox42
+            // tbSp5Einer
             // 
-            this.textBox42.Location = new System.Drawing.Point(805, 76);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(76, 20);
-            this.textBox42.TabIndex = 88;
+            this.tbSp5Einer.Location = new System.Drawing.Point(805, 76);
+            this.tbSp5Einer.Name = "tbSp5Einer";
+            this.tbSp5Einer.Size = new System.Drawing.Size(76, 20);
+            this.tbSp5Einer.TabIndex = 88;
+            this.tbSp5Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
             // 
             // lbPlayer
             // 
@@ -944,52 +998,52 @@ namespace Kniffel
             this.Controls.Add(this.btwürfeln);
             this.Controls.Add(this.lbwuerfe);
             this.Controls.Add(this.lbPlayer);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
+            this.Controls.Add(this.lbSp5Gesammtsumme);
+            this.Controls.Add(this.lbSp5SummeOben);
+            this.Controls.Add(this.tbSp5Bonus);
+            this.Controls.Add(this.tbSp5Dreierpasch);
+            this.Controls.Add(this.tbSp5Viererpasch);
+            this.Controls.Add(this.tbSp5FullHouse);
+            this.Controls.Add(this.tbSp5KleineStraße);
+            this.Controls.Add(this.tbSp5GroßeStraße);
+            this.Controls.Add(this.tbSp5Kniffel);
             this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.tbSp5Fünfer);
+            this.Controls.Add(this.tbSp5Sechser);
+            this.Controls.Add(this.tbSp5Dreier);
+            this.Controls.Add(this.tbSp5Vierer);
+            this.Controls.Add(this.tbSp5Zweier);
+            this.Controls.Add(this.tbSp5Einer);
+            this.Controls.Add(this.lbSp4Gesammtsumme);
+            this.Controls.Add(this.lbSp4SummeOben);
+            this.Controls.Add(this.tbSp4Bonus);
+            this.Controls.Add(this.tbSp4Dreierpasch);
+            this.Controls.Add(this.tbSp4Viererpasch);
+            this.Controls.Add(this.tbSp4FullHouse);
+            this.Controls.Add(this.tbSp4KleineStraße);
+            this.Controls.Add(this.tbSp4GroßeStraße);
+            this.Controls.Add(this.tbSp4Kniffel);
             this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.tbSp4Fünfer);
+            this.Controls.Add(this.tbSp4Sechser);
+            this.Controls.Add(this.tbSp4Dreier);
+            this.Controls.Add(this.tbSp4Vierer);
+            this.Controls.Add(this.tbSp4Zweier);
+            this.Controls.Add(this.tbSp4Einer);
+            this.Controls.Add(this.lbSp3Gesammtsumme);
+            this.Controls.Add(this.lbSp3SummeOben);
+            this.Controls.Add(this.tbSp3Bonus);
+            this.Controls.Add(this.tbSp3Dreierpasch);
+            this.Controls.Add(this.tbSp3Viererpasch);
+            this.Controls.Add(this.tbSp3FullHouse);
+            this.Controls.Add(this.tbSp3KleineStraße);
+            this.Controls.Add(this.tbSp3GroßeStraße);
+            this.Controls.Add(this.tbSp3Kniffel);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.tbSp3Fünfer);
+            this.Controls.Add(this.tbSp3Sechser);
             this.Controls.Add(this.tbSp3Dreier);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.tbSp3Vierer);
             this.Controls.Add(this.tbSp3Zweier);
             this.Controls.Add(this.tbSp3Einer);
             this.Controls.Add(this.pbstatus5);
@@ -1041,7 +1095,6 @@ namespace Kniffel
             this.Controls.Add(this.tbSp1Dreier);
             this.Controls.Add(this.tbSp1Zweier);
             this.Controls.Add(this.tbSp1Einer);
-            this.Controls.Add(this.btRegeln);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btHauptmenue);
             this.Name = "KniffelSpiel";
@@ -1069,7 +1122,6 @@ namespace Kniffel
 
         private System.Windows.Forms.Button btHauptmenue;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btRegeln;
         private System.Windows.Forms.TextBox tbSp1Einer;
         private System.Windows.Forms.TextBox tbSp1Zweier;
         private System.Windows.Forms.TextBox tbSp1Dreier;
@@ -1119,54 +1171,54 @@ namespace Kniffel
         private System.Windows.Forms.PictureBox pbstatus3;
         private System.Windows.Forms.PictureBox pbstatus4;
         private System.Windows.Forms.PictureBox pbstatus5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label lbSp3Gesammtsumme;
+        private System.Windows.Forms.Label lbSp3SummeOben;
+        private System.Windows.Forms.TextBox tbSp3Bonus;
+        private System.Windows.Forms.TextBox tbSp3Dreierpasch;
+        private System.Windows.Forms.TextBox tbSp3Viererpasch;
+        private System.Windows.Forms.TextBox tbSp3FullHouse;
+        private System.Windows.Forms.TextBox tbSp3KleineStraße;
+        private System.Windows.Forms.TextBox tbSp3GroßeStraße;
+        private System.Windows.Forms.TextBox tbSp3Kniffel;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbSp3Fünfer;
+        private System.Windows.Forms.TextBox tbSp3Sechser;
         private System.Windows.Forms.TextBox tbSp3Dreier;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbSp3Vierer;
         private System.Windows.Forms.TextBox tbSp3Zweier;
         private System.Windows.Forms.TextBox tbSp3Einer;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label lbSp4Gesammtsumme;
+        private System.Windows.Forms.Label lbSp4SummeOben;
+        private System.Windows.Forms.TextBox tbSp4Bonus;
+        private System.Windows.Forms.TextBox tbSp4Dreierpasch;
+        private System.Windows.Forms.TextBox tbSp4Viererpasch;
+        private System.Windows.Forms.TextBox tbSp4FullHouse;
+        private System.Windows.Forms.TextBox tbSp4KleineStraße;
+        private System.Windows.Forms.TextBox tbSp4GroßeStraße;
+        private System.Windows.Forms.TextBox tbSp4Kniffel;
         private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox tbSp4Fünfer;
+        private System.Windows.Forms.TextBox tbSp4Sechser;
+        private System.Windows.Forms.TextBox tbSp4Dreier;
+        private System.Windows.Forms.TextBox tbSp4Vierer;
+        private System.Windows.Forms.TextBox tbSp4Zweier;
+        private System.Windows.Forms.TextBox tbSp4Einer;
+        private System.Windows.Forms.Label lbSp5Gesammtsumme;
+        private System.Windows.Forms.Label lbSp5SummeOben;
+        private System.Windows.Forms.TextBox tbSp5Bonus;
+        private System.Windows.Forms.TextBox tbSp5Dreierpasch;
+        private System.Windows.Forms.TextBox tbSp5Viererpasch;
+        private System.Windows.Forms.TextBox tbSp5FullHouse;
+        private System.Windows.Forms.TextBox tbSp5KleineStraße;
+        private System.Windows.Forms.TextBox tbSp5GroßeStraße;
+        private System.Windows.Forms.TextBox tbSp5Kniffel;
         private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox tbSp5Fünfer;
+        private System.Windows.Forms.TextBox tbSp5Sechser;
+        private System.Windows.Forms.TextBox tbSp5Dreier;
+        private System.Windows.Forms.TextBox tbSp5Vierer;
+        private System.Windows.Forms.TextBox tbSp5Zweier;
+        private System.Windows.Forms.TextBox tbSp5Einer;
         private System.Windows.Forms.Label lbPlayer;
         private System.Windows.Forms.Label lbwuerfe;
         private System.Windows.Forms.Button btwürfeln;

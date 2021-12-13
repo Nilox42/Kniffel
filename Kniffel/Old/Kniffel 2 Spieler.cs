@@ -37,9 +37,7 @@ namespace Kniffel
 
         private void btRegeln_Click(object sender, EventArgs e)
         {
-            Kniffel_Regeln regeln = new Kniffel_Regeln();
-            regeln.imSpiel = true;
-            regeln.Show();
+            
         }
     }
 }

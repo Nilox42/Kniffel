@@ -46,3 +46,4 @@ C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.GenerateResource.c
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.CoreCompileInputs.cache
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.exe
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.pdb
+F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.SuggestedBindingRedirects.cache

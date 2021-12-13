@@ -45,7 +45,7 @@ namespace Kniffel
             this.label1.Location = new System.Drawing.Point(288, 9);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(383, 76);
+            this.label1.Size = new System.Drawing.Size(382, 76);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kniffel Regeln";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,6 +108,7 @@ namespace Kniffel
             this.Name = "Kniffel_Regeln";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kniffel_Regeln";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Kniffel_Regeln_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -49,12 +49,25 @@ namespace Kniffel
         {
             if (kniffel_Regeln == null)
             {
-                kniffel_Regeln = new Kniffel_Regeln();
+                kniffel_Regeln = new Kniffel_Regeln(this);
             }
 
             kniffel_Regeln.Show();
             this.Hide();
         }
+
+        //zerstöre Kniffel_Regeln
+        public void zerstöreRegeln()
+        {
+            if (kniffel_Regeln != null)
+            {
+                kniffel_Regeln.Dispose();
+                kniffel_Regeln = null;
+            }
+
+            this.Show();
+        }
+
 
         //erstelle KniffelSpiel Form und gib spieleranzahl und referenz ans Hauptmenü weiter
         private void erstelleSpiel(int spieleranzahl)
