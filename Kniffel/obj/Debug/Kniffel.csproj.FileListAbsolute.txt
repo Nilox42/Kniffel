@@ -32,7 +32,6 @@ F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.KniffelSpiel.resources
 C:\.Projects\.GitHub\Kniffel\Kniffel\bin\Debug\Kniffel.exe.config
 C:\.Projects\.GitHub\Kniffel\Kniffel\bin\Debug\Kniffel.exe
 C:\.Projects\.GitHub\Kniffel\Kniffel\bin\Debug\Kniffel.pdb
-C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.AssemblyReference.cache
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.SuggestedBindingRedirects.cache
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.Hauptmenü.resources
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.KniffelSpiel.resources
