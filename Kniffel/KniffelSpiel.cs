@@ -16,6 +16,7 @@ namespace Kniffel
         private List<Spieler> teilnehmer = new List<Spieler>();
         private Random zufall;
 
+        private int runde = 1;
         private int spieleranzahl;
         private int spieler = 1;
         private int wurfzahl = 0;
@@ -96,7 +97,7 @@ namespace Kniffel
         //Wenn schon 3 würfe gemacht wurden dann setze alles zurück und wähle den nächsten spieler aus
         public void bereiteWurfvor()
         {
-            wurfzahl++;
+            wurfzahl++;                         //erhöhe wurfelzahl
             if (wurfzahl < 4)
             {
                 wuerfeln();
@@ -115,22 +116,24 @@ namespace Kniffel
                 }
                 letzterwurf.Clear();
 
-                wurfzahl = 0;
-                spieler++;
-                if (spieler > spieleranzahl)
+                runde++;                        //Erhöhe Rundenzahl
+                wurfzahl = 0;                   //Wurfzahl Zurücksetzten
+                spieler++;                      //Erhöhe Spielerzahl
+                if (spieler > spieleranzahl)    //Wenn spielerzahl höher als maximale spieleranzahl ist springe zum ersten spieler zurück
                 {
                     spieler = 1;
                 }
 
-                cbmöglichkeiten.Items.Clear();
-                erneuereText(new List<int>());
-                erneuereBilder();
+                cbmöglichkeiten.Items.Clear();  //Lösche inhalte der ComboBox
+                erneuereText(new List<int>());  //erneure Text mit leerer Liste                        
+                erneuereBilder();               //Erneuere Bilder
 
                 btwürfeln.Text = "Würfeln";
             }
 
-            lbPlayer.Text = "Player: " + spieler;
-            lbwuerfe.Text = "Wurf: " + wurfzahl;
+            lbrunde.Text = "Runde: " + runde.ToString();
+            lbPlayer.Text = "Player: " + spieler.ToString();
+            lbwuerfe.Text = "Wurf: " + wurfzahl.ToString();
         }
 
         public void wuerfeln()
@@ -642,4 +645,4 @@ namespace Kniffel
 
         
     }
-}
+} 

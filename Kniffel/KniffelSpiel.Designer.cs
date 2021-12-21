@@ -131,6 +131,7 @@ namespace Kniffel
             this.lbPlayer = new System.Windows.Forms.Label();
             this.lbwuerfe = new System.Windows.Forms.Label();
             this.btwürfeln = new System.Windows.Forms.Button();
+            this.lbrunde = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl2)).BeginInit();
@@ -966,7 +967,7 @@ namespace Kniffel
             // 
             this.lbPlayer.Location = new System.Drawing.Point(200, 76);
             this.lbPlayer.Name = "lbPlayer";
-            this.lbPlayer.Size = new System.Drawing.Size(49, 23);
+            this.lbPlayer.Size = new System.Drawing.Size(121, 23);
             this.lbPlayer.TabIndex = 104;
             this.lbPlayer.Text = "Player:";
             this.lbPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -975,7 +976,7 @@ namespace Kniffel
             // 
             this.lbwuerfe.Location = new System.Drawing.Point(200, 99);
             this.lbwuerfe.Name = "lbwuerfe";
-            this.lbwuerfe.Size = new System.Drawing.Size(52, 23);
+            this.lbwuerfe.Size = new System.Drawing.Size(121, 23);
             this.lbwuerfe.TabIndex = 105;
             this.lbwuerfe.Text = "Wurf:";
             this.lbwuerfe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -990,11 +991,21 @@ namespace Kniffel
             this.btwürfeln.UseVisualStyleBackColor = true;
             this.btwürfeln.Click += new System.EventHandler(this.btwürfeln_Click);
             // 
+            // lbrunde
+            // 
+            this.lbrunde.Location = new System.Drawing.Point(200, 53);
+            this.lbrunde.Name = "lbrunde";
+            this.lbrunde.Size = new System.Drawing.Size(121, 23);
+            this.lbrunde.TabIndex = 107;
+            this.lbrunde.Text = "Round:";
+            this.lbrunde.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // KniffelSpiel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 644);
+            this.Controls.Add(this.lbrunde);
             this.Controls.Add(this.btwürfeln);
             this.Controls.Add(this.lbwuerfe);
             this.Controls.Add(this.lbPlayer);
@@ -1222,5 +1233,6 @@ namespace Kniffel
         private System.Windows.Forms.Label lbPlayer;
         private System.Windows.Forms.Label lbwuerfe;
         private System.Windows.Forms.Button btwürfeln;
+        private System.Windows.Forms.Label lbrunde;
     }
 }
