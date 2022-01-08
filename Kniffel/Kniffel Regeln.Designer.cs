@@ -31,7 +31,6 @@ namespace Kniffel
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kniffel_Regeln));
             this.label1 = new System.Windows.Forms.Label();
-            this.btHauptmenue = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -49,16 +48,6 @@ namespace Kniffel
             this.label1.TabIndex = 1;
             this.label1.Text = "Kniffel Regeln";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btHauptmenue
-            // 
-            this.btHauptmenue.Location = new System.Drawing.Point(897, 9);
-            this.btHauptmenue.Name = "btHauptmenue";
-            this.btHauptmenue.Size = new System.Drawing.Size(75, 23);
-            this.btHauptmenue.TabIndex = 2;
-            this.btHauptmenue.Text = "Hauptmenü";
-            this.btHauptmenue.UseVisualStyleBackColor = true;
-            this.btHauptmenue.Click += new System.EventHandler(this.btHauptmenue_Click);
             // 
             // label2
             // 
@@ -103,8 +92,9 @@ namespace Kniffel
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btHauptmenue);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(1000, 800);
+            this.MinimumSize = new System.Drawing.Size(1000, 800);
             this.Name = "Kniffel_Regeln";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kniffel_Regeln";
@@ -117,7 +107,6 @@ namespace Kniffel
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btHauptmenue;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;

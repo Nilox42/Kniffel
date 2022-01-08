@@ -23,6 +23,7 @@ namespace Kniffel
 
         private List<int> letzterwurf = new List<int>();
         private bool[] würfelstatus = { true, true, true, true, true };
+        private int[] spielergesamtsummen = { 0, 0, 0, 0, 0 };
 
         public KniffelSpiel(int spieleranzahl, Hauptmenü hauptmenü)
         {
@@ -89,6 +90,11 @@ namespace Kniffel
         {
             berechneSummen();
         }
+
+        private void btregeln_Click(object sender, EventArgs e)
+        {
+            hauptmenü.erstelleREgeln();
+        }
         #endregion
 
         #region Wuerfeln
@@ -116,7 +122,13 @@ namespace Kniffel
                 }
                 letzterwurf.Clear();
 
-                runde++;                        //Erhöhe Rundenzahl
+                runde++;                        //Erhöhe Rundenzahl und wenn die 13. Runde vorüber ist beende das Spiel
+                if (runde >= 14)
+                {
+                    waehleGewinner();
+                    return;
+                }
+
                 wurfzahl = 0;                   //Wurfzahl Zurücksetzten
                 spieler++;                      //Erhöhe Spielerzahl
                 if (spieler > spieleranzahl)    //Wenn spielerzahl höher als maximale spieleranzahl ist springe zum ersten spieler zurück
@@ -384,7 +396,7 @@ namespace Kniffel
         }
         #endregion
 
-        #region benus berechnung
+        #region berechnung
         private void berechneSummen()
         {
             int p1oben = 0;
@@ -498,6 +510,8 @@ namespace Kniffel
                     p1utnen += int.Parse(tbSp1KleineStraße.Text);
                     p1utnen += int.Parse(tbSp1GroßeStraße.Text);
                     p1utnen += int.Parse(tbSp1Kniffel.Text);
+
+                    p1utnen += int.Parse(tbSp1Chance.Text);
                 }
                 catch
                 {
@@ -512,6 +526,8 @@ namespace Kniffel
                     p2utnen += int.Parse(tbSp2KleineStraße.Text);
                     p2utnen += int.Parse(tbSp2GroßeStraße.Text);
                     p2utnen += int.Parse(tbSp2Kniffel.Text);
+
+                    p2utnen += int.Parse(tbSp2Chance.Text);
                 }
                 catch
                 {
@@ -526,6 +542,8 @@ namespace Kniffel
                     p3utnen += int.Parse(tbSp3KleineStraße.Text);
                     p3utnen += int.Parse(tbSp3GroßeStraße.Text);
                     p3utnen += int.Parse(tbSp3Kniffel.Text);
+
+                    p3utnen += int.Parse(tbSp3Chance.Text);
                 }
                 catch
                 {
@@ -540,7 +558,8 @@ namespace Kniffel
                     p4utnen += int.Parse(tbSp4KleineStraße.Text);
                     p4utnen += int.Parse(tbSp4GroßeStraße.Text);
                     p4utnen += int.Parse(tbSp4Kniffel.Text);
-                    p4utnen = 0;
+
+                    p4utnen += int.Parse(tbSp4Chance.Text);
                 }
                 catch
                 {
@@ -555,6 +574,8 @@ namespace Kniffel
                     p5utnen += int.Parse(tbSp5KleineStraße.Text);
                     p5utnen += int.Parse(tbSp5GroßeStraße.Text);
                     p5utnen += int.Parse(tbSp5Kniffel.Text);
+
+                    p5utnen += int.Parse(tbSp5Chance.Text);
                 }
                 catch
                 {
@@ -562,7 +583,7 @@ namespace Kniffel
                 }
             }
 
-            int bonusplus = 25;
+            int bonusplus = 35;
 
             int p1bonus = 0;
             int p2bonus = 0;
@@ -572,7 +593,7 @@ namespace Kniffel
             //Bonus
             {
                 //Player 1
-                if (p1bonus >= 63)
+                if (p1oben >= 63)
                 {
                     p1bonus = bonusplus;
                     tbSp1Bonus.Text = p1bonus.ToString();
@@ -583,7 +604,7 @@ namespace Kniffel
                     tbSp1Bonus.Text = p1bonus.ToString();
                 }
                 //Player 2
-                if (p2bonus >= 63)
+                if (p2oben >= 63)
                 {
                     p2bonus = bonusplus;
                     tbSp2Bonus.Text = p2bonus.ToString();
@@ -594,7 +615,7 @@ namespace Kniffel
                     tbSp2Bonus.Text = p2bonus.ToString();
                 }
                 //Player 3
-                if (p3bonus >= 63)
+                if (p3oben >= 63)
                 {
                     p3bonus = bonusplus;
                     tbSp3Bonus.Text = p3bonus.ToString();
@@ -605,7 +626,7 @@ namespace Kniffel
                     tbSp3Bonus.Text = p3bonus.ToString();
                 }
                 //Player 4
-                if (p4bonus >= 63)
+                if (p4oben >= 63)
                 {
                     p4bonus = bonusplus;
                     tbSp4Bonus.Text = p4bonus.ToString();
@@ -616,7 +637,7 @@ namespace Kniffel
                     tbSp4Bonus.Text = p4bonus.ToString();
                 }
                 //Player 5
-                if (p5bonus >= 63)
+                if (p5oben >= 63)
                 {
                     p5bonus = bonusplus;
                     tbSp5Bonus.Text = p5bonus.ToString();
@@ -628,11 +649,19 @@ namespace Kniffel
                 }
             }
 
+            //berechne des gesamtwert
             int p1gesamt = p1oben + p1utnen + p1bonus;
             int p2gesamt = p2oben + p2utnen + p2bonus;
             int p3gesamt = p3oben + p3utnen + p3bonus;
             int p4gesamt = p4oben + p4utnen + p4bonus;
             int p5gesamt = p5oben + p5utnen + p5bonus;
+
+            //Speicher den gesamtwert in array 
+            spielergesamtsummen[0] = p1gesamt;
+            spielergesamtsummen[1] = p2gesamt;
+            spielergesamtsummen[2] = p3gesamt;
+            spielergesamtsummen[3] = p4gesamt;
+            spielergesamtsummen[4] = p5gesamt;
 
             lbSp1Gesammtsumme.Text = p1gesamt.ToString();
             lbSp2Gesammtsumme.Text = p2gesamt.ToString();
@@ -640,9 +669,76 @@ namespace Kniffel
             lbSp4Gesammtsumme.Text = p4gesamt.ToString();
             lbSp5Gesammtsumme.Text = p5gesamt.ToString();
         }
-
         #endregion
 
-        
+        #region Ende
+        private void waehleGewinner()
+        {
+            //Überprüfe pb Spiler 1 gewonnen hat
+            if (
+                spielergesamtsummen[0] > spielergesamtsummen[1] &&
+                spielergesamtsummen[0] > spielergesamtsummen[2] &&
+                spielergesamtsummen[0] > spielergesamtsummen[3] &&
+                spielergesamtsummen[0] > spielergesamtsummen[4]
+                )
+            {
+                beendeSpiel(1);
+            }
+
+            //Überprüfe pb Spiler 2 gewonnen hat
+            if (
+                spielergesamtsummen[1] > spielergesamtsummen[0] &&
+                spielergesamtsummen[1] > spielergesamtsummen[2] &&
+                spielergesamtsummen[1] > spielergesamtsummen[3] &&
+                spielergesamtsummen[1] > spielergesamtsummen[4]
+                )
+            {
+                beendeSpiel(2);
+            }
+
+            //Überprüfe pb Spiler 3 gewonnen hat
+            if (
+                spielergesamtsummen[2] > spielergesamtsummen[0] &&
+                spielergesamtsummen[2] > spielergesamtsummen[1] &&
+                spielergesamtsummen[2] > spielergesamtsummen[3] &&
+                spielergesamtsummen[2] > spielergesamtsummen[4]
+                )
+            {
+                beendeSpiel(3);
+            }
+
+            //Überprüfe pb Spiler 4 gewonnen hat
+            if (
+                spielergesamtsummen[3] > spielergesamtsummen[0] &&
+                spielergesamtsummen[3] > spielergesamtsummen[1] &&
+                spielergesamtsummen[3] > spielergesamtsummen[2] &&
+                spielergesamtsummen[3] > spielergesamtsummen[4]
+                )
+            {
+                beendeSpiel(4);
+            }
+
+            //Überprüfe pb Spiler 5 gewonnen hat
+            if (
+                spielergesamtsummen[4] > spielergesamtsummen[0] &&
+                spielergesamtsummen[4] > spielergesamtsummen[1] &&
+                spielergesamtsummen[4] > spielergesamtsummen[2] &&
+                spielergesamtsummen[4] > spielergesamtsummen[3]
+                )
+            {
+                beendeSpiel(5);
+            }
+        }
+
+        public void beendeSpiel(int spielerzahl)
+        {
+            DialogResult result = MessageBox.Show("Spieler " + spielerzahl + " ist der Gewinner der Runde!", "Spielende",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+
+            hauptmenü.zerstöreSpiel();
+        }
+        #endregion
+
     }
 } 

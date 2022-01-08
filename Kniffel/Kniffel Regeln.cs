@@ -21,20 +21,6 @@ namespace Kniffel
             this.hauptmenü = hauptmenü;
 
             InitializeComponent();
-
-            if (imSpiel == true)
-            {
-                btHauptmenue.Visible = false;
-            }
-            else if (imSpiel == false)
-            {
-                btHauptmenue.Visible = true;
-            }
-        }
-
-        private void btHauptmenue_Click(object sender, EventArgs e)
-        {
-            hauptmenü.zerstöreRegeln();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

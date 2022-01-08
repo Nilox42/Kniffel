@@ -44,16 +44,15 @@ namespace Kniffel
         }
         #endregion
 
+
         //erstelle Kniffel_Regeln und verstecke hauptmenü
         public void erstelleREgeln()
         {
-            if (kniffel_Regeln == null)
-            {
-                kniffel_Regeln = new Kniffel_Regeln(this);
-            }
+            //Zerstöre existierende Fenster falls es existiert
+            zerstöreRegeln();
 
+            kniffel_Regeln = new Kniffel_Regeln(this);
             kniffel_Regeln.Show();
-            this.Hide();
         }
 
         //zerstöre Kniffel_Regeln
@@ -64,8 +63,6 @@ namespace Kniffel
                 kniffel_Regeln.Dispose();
                 kniffel_Regeln = null;
             }
-
-            this.Show();
         }
 
 
