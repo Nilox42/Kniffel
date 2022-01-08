@@ -74,7 +74,6 @@ namespace Kniffel
             this.lbzahl3 = new System.Windows.Forms.Label();
             this.lbzahl4 = new System.Windows.Forms.Label();
             this.lbzahl5 = new System.Windows.Forms.Label();
-            this.cbmöglichkeiten = new System.Windows.Forms.ComboBox();
             this.pbstatus1 = new System.Windows.Forms.PictureBox();
             this.pbstatus2 = new System.Windows.Forms.PictureBox();
             this.pbstatus3 = new System.Windows.Forms.PictureBox();
@@ -133,6 +132,7 @@ namespace Kniffel
             this.btwürfeln = new System.Windows.Forms.Button();
             this.lbrunde = new System.Windows.Forms.Label();
             this.btregeln = new System.Windows.Forms.Button();
+            this.rtbmöglichkeiten = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl2)).BeginInit();
@@ -235,7 +235,7 @@ namespace Kniffel
             // 
             // tbSp1Dreierpasch
             // 
-            this.tbSp1Dreierpasch.Location = new System.Drawing.Point(467, 354);
+            this.tbSp1Dreierpasch.Location = new System.Drawing.Point(465, 351);
             this.tbSp1Dreierpasch.Name = "tbSp1Dreierpasch";
             this.tbSp1Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Dreierpasch.TabIndex = 11;
@@ -288,7 +288,7 @@ namespace Kniffel
             // 
             // tbSp1Kniffel
             // 
-            this.tbSp1Kniffel.Location = new System.Drawing.Point(467, 516);
+            this.tbSp1Kniffel.Location = new System.Drawing.Point(467, 520);
             this.tbSp1Kniffel.Name = "tbSp1Kniffel";
             this.tbSp1Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Kniffel.TabIndex = 19;
@@ -360,7 +360,7 @@ namespace Kniffel
             // 
             // tbSp2Kniffel
             // 
-            this.tbSp2Kniffel.Location = new System.Drawing.Point(549, 516);
+            this.tbSp2Kniffel.Location = new System.Drawing.Point(552, 520);
             this.tbSp2Kniffel.Name = "tbSp2Kniffel";
             this.tbSp2Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Kniffel.TabIndex = 28;
@@ -405,7 +405,7 @@ namespace Kniffel
             // 
             // tbSp2Dreierpasch
             // 
-            this.tbSp2Dreierpasch.Location = new System.Drawing.Point(549, 354);
+            this.tbSp2Dreierpasch.Location = new System.Drawing.Point(547, 351);
             this.tbSp2Dreierpasch.Name = "tbSp2Dreierpasch";
             this.tbSp2Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Dreierpasch.TabIndex = 33;
@@ -516,55 +516,52 @@ namespace Kniffel
             // lbzahl1
             // 
             this.lbzahl1.AutoSize = true;
-            this.lbzahl1.Location = new System.Drawing.Point(48, 248);
+            this.lbzahl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbzahl1.Location = new System.Drawing.Point(38, 253);
             this.lbzahl1.Name = "lbzahl1";
-            this.lbzahl1.Size = new System.Drawing.Size(13, 13);
+            this.lbzahl1.Size = new System.Drawing.Size(36, 39);
             this.lbzahl1.TabIndex = 45;
             this.lbzahl1.Text = "0";
             // 
             // lbzahl2
             // 
             this.lbzahl2.AutoSize = true;
-            this.lbzahl2.Location = new System.Drawing.Point(101, 248);
+            this.lbzahl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbzahl2.Location = new System.Drawing.Point(94, 253);
             this.lbzahl2.Name = "lbzahl2";
-            this.lbzahl2.Size = new System.Drawing.Size(13, 13);
+            this.lbzahl2.Size = new System.Drawing.Size(36, 39);
             this.lbzahl2.TabIndex = 46;
             this.lbzahl2.Text = "0";
             // 
             // lbzahl3
             // 
             this.lbzahl3.AutoSize = true;
-            this.lbzahl3.Location = new System.Drawing.Point(156, 248);
+            this.lbzahl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbzahl3.Location = new System.Drawing.Point(150, 253);
             this.lbzahl3.Name = "lbzahl3";
-            this.lbzahl3.Size = new System.Drawing.Size(13, 13);
+            this.lbzahl3.Size = new System.Drawing.Size(36, 39);
             this.lbzahl3.TabIndex = 47;
             this.lbzahl3.Text = "0";
             // 
             // lbzahl4
             // 
             this.lbzahl4.AutoSize = true;
-            this.lbzahl4.Location = new System.Drawing.Point(217, 248);
+            this.lbzahl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbzahl4.Location = new System.Drawing.Point(206, 253);
             this.lbzahl4.Name = "lbzahl4";
-            this.lbzahl4.Size = new System.Drawing.Size(13, 13);
+            this.lbzahl4.Size = new System.Drawing.Size(36, 39);
             this.lbzahl4.TabIndex = 48;
             this.lbzahl4.Text = "0";
             // 
             // lbzahl5
             // 
             this.lbzahl5.AutoSize = true;
-            this.lbzahl5.Location = new System.Drawing.Point(272, 248);
+            this.lbzahl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbzahl5.Location = new System.Drawing.Point(262, 253);
             this.lbzahl5.Name = "lbzahl5";
-            this.lbzahl5.Size = new System.Drawing.Size(13, 13);
+            this.lbzahl5.Size = new System.Drawing.Size(36, 39);
             this.lbzahl5.TabIndex = 49;
             this.lbzahl5.Text = "0";
-            // 
-            // cbmöglichkeiten
-            // 
-            this.cbmöglichkeiten.FormattingEnabled = true;
-            this.cbmöglichkeiten.Location = new System.Drawing.Point(31, 321);
-            this.cbmöglichkeiten.Name = "cbmöglichkeiten";
-            this.cbmöglichkeiten.Size = new System.Drawing.Size(274, 21);
-            this.cbmöglichkeiten.TabIndex = 50;
             // 
             // pbstatus1
             // 
@@ -682,7 +679,7 @@ namespace Kniffel
             // 
             // tbSp3Kniffel
             // 
-            this.tbSp3Kniffel.Location = new System.Drawing.Point(634, 519);
+            this.tbSp3Kniffel.Location = new System.Drawing.Point(635, 520);
             this.tbSp3Kniffel.Name = "tbSp3Kniffel";
             this.tbSp3Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Kniffel.TabIndex = 63;
@@ -755,7 +752,7 @@ namespace Kniffel
             // lbSp4Gesammtsumme
             // 
             this.lbSp4Gesammtsumme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSp4Gesammtsumme.Location = new System.Drawing.Point(723, 589);
+            this.lbSp4Gesammtsumme.Location = new System.Drawing.Point(723, 588);
             this.lbSp4Gesammtsumme.Name = "lbSp4Gesammtsumme";
             this.lbSp4Gesammtsumme.Size = new System.Drawing.Size(76, 20);
             this.lbSp4Gesammtsumme.TabIndex = 87;
@@ -778,7 +775,7 @@ namespace Kniffel
             // 
             // tbSp4Dreierpasch
             // 
-            this.tbSp4Dreierpasch.Location = new System.Drawing.Point(723, 354);
+            this.tbSp4Dreierpasch.Location = new System.Drawing.Point(722, 351);
             this.tbSp4Dreierpasch.Name = "tbSp4Dreierpasch";
             this.tbSp4Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Dreierpasch.TabIndex = 84;
@@ -823,7 +820,7 @@ namespace Kniffel
             // 
             // tbSp4Kniffel
             // 
-            this.tbSp4Kniffel.Location = new System.Drawing.Point(723, 516);
+            this.tbSp4Kniffel.Location = new System.Drawing.Point(722, 519);
             this.tbSp4Kniffel.Name = "tbSp4Kniffel";
             this.tbSp4Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Kniffel.TabIndex = 79;
@@ -919,7 +916,7 @@ namespace Kniffel
             // 
             // tbSp5Dreierpasch
             // 
-            this.tbSp5Dreierpasch.Location = new System.Drawing.Point(805, 354);
+            this.tbSp5Dreierpasch.Location = new System.Drawing.Point(806, 351);
             this.tbSp5Dreierpasch.Name = "tbSp5Dreierpasch";
             this.tbSp5Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Dreierpasch.TabIndex = 100;
@@ -964,7 +961,7 @@ namespace Kniffel
             // 
             // tbSp5Kniffel
             // 
-            this.tbSp5Kniffel.Location = new System.Drawing.Point(805, 516);
+            this.tbSp5Kniffel.Location = new System.Drawing.Point(806, 520);
             this.tbSp5Kniffel.Name = "tbSp5Kniffel";
             this.tbSp5Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Kniffel.TabIndex = 95;
@@ -1081,11 +1078,23 @@ namespace Kniffel
             this.btregeln.UseVisualStyleBackColor = true;
             this.btregeln.Click += new System.EventHandler(this.btregeln_Click);
             // 
+            // rtbmöglichkeiten
+            // 
+            this.rtbmöglichkeiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbmöglichkeiten.Location = new System.Drawing.Point(31, 320);
+            this.rtbmöglichkeiten.Name = "rtbmöglichkeiten";
+            this.rtbmöglichkeiten.ReadOnly = true;
+            this.rtbmöglichkeiten.Size = new System.Drawing.Size(274, 312);
+            this.rtbmöglichkeiten.TabIndex = 109;
+            this.rtbmöglichkeiten.TabStop = false;
+            this.rtbmöglichkeiten.Text = "";
+            // 
             // KniffelSpiel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 644);
+            this.Controls.Add(this.rtbmöglichkeiten);
             this.Controls.Add(this.btregeln);
             this.Controls.Add(this.lbrunde);
             this.Controls.Add(this.btwürfeln);
@@ -1144,7 +1153,6 @@ namespace Kniffel
             this.Controls.Add(this.pbstatus3);
             this.Controls.Add(this.pbstatus2);
             this.Controls.Add(this.pbstatus1);
-            this.Controls.Add(this.cbmöglichkeiten);
             this.Controls.Add(this.lbzahl5);
             this.Controls.Add(this.lbzahl4);
             this.Controls.Add(this.lbzahl3);
@@ -1258,7 +1266,6 @@ namespace Kniffel
         private System.Windows.Forms.Label lbzahl3;
         private System.Windows.Forms.Label lbzahl4;
         private System.Windows.Forms.Label lbzahl5;
-        private System.Windows.Forms.ComboBox cbmöglichkeiten;
         private System.Windows.Forms.PictureBox pbstatus1;
         private System.Windows.Forms.PictureBox pbstatus2;
         private System.Windows.Forms.PictureBox pbstatus3;
@@ -1317,5 +1324,6 @@ namespace Kniffel
         private System.Windows.Forms.Button btwürfeln;
         private System.Windows.Forms.Label lbrunde;
         private System.Windows.Forms.Button btregeln;
+        private System.Windows.Forms.RichTextBox rtbmöglichkeiten;
     }
 }

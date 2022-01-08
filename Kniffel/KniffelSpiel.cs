@@ -122,21 +122,22 @@ namespace Kniffel
                 }
                 letzterwurf.Clear();
 
-                runde++;                        //Erhöhe Rundenzahl und wenn die 13. Runde vorüber ist beende das Spiel
-                if (runde >= 14)
-                {
-                    waehleGewinner();
-                    return;
-                }
 
                 wurfzahl = 0;                   //Wurfzahl Zurücksetzten
                 spieler++;                      //Erhöhe Spielerzahl
                 if (spieler > spieleranzahl)    //Wenn spielerzahl höher als maximale spieleranzahl ist springe zum ersten spieler zurück
                 {
                     spieler = 1;
+
+                    runde++;                        //Erhöhe Rundenzahl und wenn die 13. Runde vorüber ist beende das Spiel
+                    if (runde > 13)
+                    {
+                        waehleGewinner();
+                        return;
+                    }
                 }
 
-                cbmöglichkeiten.Items.Clear();  //Lösche inhalte der ComboBox
+                rtbmöglichkeiten.Text = "";  //Lösche inhalte der richtextbox
                 erneuereText(new List<int>());  //erneure Text mit leerer Liste                        
                 erneuereBilder();               //Erneuere Bilder
 
@@ -169,12 +170,14 @@ namespace Kniffel
             erneuereText(ergebnis);
 
             //Bereinige Liste und lade sie mit neuen Daten
-            cbmöglichkeiten.Items.Clear();
+            rtbmöglichkeiten.Text = "";
 
+            string möglichkeiten = string.Empty;
             foreach (würfe w in pruefe(ergebnis))
             {
-                cbmöglichkeiten.Items.Add(w.ToString());
+                möglichkeiten += w.ToString() + "\n";
             }
+            rtbmöglichkeiten.Text = möglichkeiten;
         }
 
         public List<würfe> pruefe(List<int> zahlen)
@@ -633,7 +636,7 @@ namespace Kniffel
                 }
                 else
                 {
-                    p1bonus = 0;
+                    p4bonus = 0;
                     tbSp4Bonus.Text = p4bonus.ToString();
                 }
                 //Player 5
@@ -686,7 +689,7 @@ namespace Kniffel
             }
 
             //Überprüfe pb Spiler 2 gewonnen hat
-            if (
+            else if (
                 spielergesamtsummen[1] > spielergesamtsummen[0] &&
                 spielergesamtsummen[1] > spielergesamtsummen[2] &&
                 spielergesamtsummen[1] > spielergesamtsummen[3] &&
@@ -697,7 +700,7 @@ namespace Kniffel
             }
 
             //Überprüfe pb Spiler 3 gewonnen hat
-            if (
+            else if (
                 spielergesamtsummen[2] > spielergesamtsummen[0] &&
                 spielergesamtsummen[2] > spielergesamtsummen[1] &&
                 spielergesamtsummen[2] > spielergesamtsummen[3] &&
@@ -708,7 +711,7 @@ namespace Kniffel
             }
 
             //Überprüfe pb Spiler 4 gewonnen hat
-            if (
+            else if (
                 spielergesamtsummen[3] > spielergesamtsummen[0] &&
                 spielergesamtsummen[3] > spielergesamtsummen[1] &&
                 spielergesamtsummen[3] > spielergesamtsummen[2] &&
@@ -719,7 +722,7 @@ namespace Kniffel
             }
 
             //Überprüfe pb Spiler 5 gewonnen hat
-            if (
+            else if (
                 spielergesamtsummen[4] > spielergesamtsummen[0] &&
                 spielergesamtsummen[4] > spielergesamtsummen[1] &&
                 spielergesamtsummen[4] > spielergesamtsummen[2] &&
@@ -728,13 +731,28 @@ namespace Kniffel
             {
                 beendeSpiel(5);
             }
+            else
+            {
+                beendeSpiel(-1);
+            }
         }
 
         public void beendeSpiel(int spielerzahl)
         {
-            DialogResult result = MessageBox.Show("Spieler " + spielerzahl + " ist der Gewinner der Runde!", "Spielende",
+            if (spielerzahl == -1)
+            {
+                DialogResult result = MessageBox.Show("Keiner hat Gewonnen wie hast du das denn hinbekommen?!", "Idiot",
                                  MessageBoxButtons.OK,
-                                 MessageBoxIcon.Information);
+                                 MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Spieler " + spielerzahl + " ist der Gewinner der Runde!", "Spielende",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
+            }
+
+            
 
             hauptmenü.zerstöreSpiel();
         }
