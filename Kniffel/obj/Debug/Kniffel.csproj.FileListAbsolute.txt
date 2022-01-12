@@ -16,7 +16,6 @@ O:\Dateien\Dokumente\VisualStudio Dateien\ROBIIIIIIIINN\Kniffel\Kniffel\obj\Debu
 F:\.Projects\.GitHub\Kniffel\Kniffel\bin\Debug\Kniffel.exe.config
 F:\.Projects\.GitHub\Kniffel\Kniffel\bin\Debug\Kniffel.exe
 F:\.Projects\.GitHub\Kniffel\Kniffel\bin\Debug\Kniffel.pdb
-F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.AssemblyReference.cache
 F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.Hauptmenü.resources
 F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.Kniffel_2_Spieler.resources
 F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.Kniffel_3_Spieler.resources
@@ -46,3 +45,4 @@ C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.CoreCompileInputs.
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.exe
 C:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.pdb
 F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.SuggestedBindingRedirects.cache
+F:\.Projects\.GitHub\Kniffel\Kniffel\obj\Debug\Kniffel.csproj.AssemblyReference.cache

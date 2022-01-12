@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kniffel
 {
+    //erleichtert arbeiten mit würfen
     public enum würfe
     {
         einer = 1,
@@ -22,14 +23,5 @@ namespace Kniffel
         kniffel = 12,
 
         fehler = 13
-    }
-
-    public class Spieler
-    {
-        public int ID { get; private set; }
-
-        public List<List<int>> letzewuerfe = new List<List<int>>();
-
-        
     }
 }

@@ -13,11 +13,12 @@ namespace Kniffel
     public partial class KniffelSpiel : Form
     {
         private Hauptmenü hauptmenü;
-        private List<Spieler> teilnehmer = new List<Spieler>();
         private Random zufall;
 
-        private int runde = 1;
         private int spieleranzahl;
+        private int maximalerundenzahl = 13;
+
+        private int runde = 1;
         private int spieler = 1;
         private int wurfzahl = 0;
 
@@ -41,12 +42,6 @@ namespace Kniffel
             hauptmenü.Show();
             this.Close();
         }
-        private void btRegeln_Click(object sender, EventArgs e)
-        {
-            hauptmenü.erstelleREgeln();
-            this.Close();
-        }
-
         private void pbwuerfel_Click(object sender, EventArgs e)
         {
             btwürfeln_Click(sender, e);
@@ -82,18 +77,15 @@ namespace Kniffel
             wechselStatus(4);
         }
 
-        private void tbOben_TextChanged(object sender, EventArgs e)
-        {
-            berechneSummen();
-        }
-        private void tbUnten_TextChanged(object sender, EventArgs e)
-        {
-            berechneSummen();
-        }
 
         private void btregeln_Click(object sender, EventArgs e)
         {
             hauptmenü.erstelleREgeln();
+        }
+
+        private void tbSp1Einer_TextChanged(object sender, EventArgs e)
+        {
+            berechneSummen();
         }
         #endregion
 
@@ -101,7 +93,7 @@ namespace Kniffel
         //Incrementiere wurfzahl und teste ob 3 würfe gemacht wurden
         //Wenn weniger als 3 würfe gemacht wurden würfel
         //Wenn schon 3 würfe gemacht wurden dann setze alles zurück und wähle den nächsten spieler aus
-        public void bereiteWurfvor()
+        private void bereiteWurfvor()
         {
             wurfzahl++;                         //erhöhe wurfelzahl
             if (wurfzahl < 4)
@@ -130,14 +122,13 @@ namespace Kniffel
                     spieler = 1;
 
                     runde++;                        //Erhöhe Rundenzahl und wenn die 13. Runde vorüber ist beende das Spiel
-                    if (runde > 13)
+                    if (runde > maximalerundenzahl)
                     {
                         waehleGewinner();
                         return;
                     }
                 }
 
-                rtbmöglichkeiten.Text = "";  //Lösche inhalte der richtextbox
                 erneuereText(new List<int>());  //erneure Text mit leerer Liste                        
                 erneuereBilder();               //Erneuere Bilder
 
@@ -149,7 +140,7 @@ namespace Kniffel
             lbwuerfe.Text = "Wurf: " + wurfzahl.ToString();
         }
 
-        public void wuerfeln()
+        private void wuerfeln()
         {
             //überprüfe ob würfel gesperrt ist und wenn nicht würfle Zahle erneut und lade "letzderwurf" mit neuem wurf
             List<int> ergebnis = new List<int>();
@@ -168,125 +159,11 @@ namespace Kniffel
 
             //Lade neue Bilder
             erneuereText(ergebnis);
-
-            //Bereinige Liste und lade sie mit neuen Daten
-            rtbmöglichkeiten.Text = "";
-
-            string möglichkeiten = string.Empty;
-            foreach (würfe w in pruefe(ergebnis))
-            {
-                möglichkeiten += w.ToString() + "\n";
-            }
-            rtbmöglichkeiten.Text = möglichkeiten;
-        }
-
-        public List<würfe> pruefe(List<int> zahlen)
-        {
-            List<würfe> resultat = new List<würfe>();
-
-            //einer
-            if(zahlen.Where(i => i == 1).ToArray().Length > 0)
-            {
-                resultat.Add(würfe.einer);
-            }
-            //zwier
-            if (zahlen.Where(i => i == 2).ToArray().Length > 0)
-            {
-                resultat.Add(würfe.zweier);
-            }
-            //dreier
-            if (zahlen.Where(i => i == 3).ToArray().Length > 0)
-            {
-                resultat.Add(würfe.dreier);
-            }
-            //vierer
-            if (zahlen.Where(i => i == 4).ToArray().Length > 0)
-            {
-                resultat.Add(würfe.vierer);
-            }
-            //fuenfer
-            if (zahlen.Where(i => i == 5).ToArray().Length > 0)
-            {
-                resultat.Add(würfe.fuenfer);
-            }
-            //serchser
-            if (zahlen.Where(i => i == 6).ToArray().Length > 0)
-            {
-                resultat.Add(würfe.sechser);
-            }
-
-            //Dreierpasch
-            for (int i = 0; i < 6; i++)
-            {
-                if (zahlen.Where(z => z == i).ToArray().Length >= 3)
-                {
-                    resultat.Add(würfe.dreierpasch);
-                    break;
-                }
-
-            }
-            //Vierpasch
-            for (int i = 0; i < 6; i++)
-            {
-                if (zahlen.Where(z => z == i).ToArray().Length >= 4)
-                {
-                    resultat.Add(würfe.viererpasch);
-                    break;
-                }
-            }
-            
-            //kleine strasse
-            if(
-                zahlen.Contains(1) &&
-                zahlen.Contains(2) &&
-                zahlen.Contains(3) &&
-                zahlen.Contains(4)
-                ||
-                zahlen.Contains(2) &&
-                zahlen.Contains(3) &&
-                zahlen.Contains(4) &&
-                zahlen.Contains(5) 
-                ||
-                zahlen.Contains(3) &&
-                zahlen.Contains(4) &&
-                zahlen.Contains(5) &&
-                zahlen.Contains(6)
-                )
-            {
-                resultat.Add(würfe.kleinestrasse);
-            }
-
-            //grosse strasse
-            if (
-                zahlen.Contains(1) &&
-                zahlen.Contains(2) &&
-                zahlen.Contains(3) &&
-                zahlen.Contains(4) &&
-                zahlen.Contains(5)
-                ||
-                zahlen.Contains(2) &&
-                zahlen.Contains(3) &&
-                zahlen.Contains(4) &&
-                zahlen.Contains(5) &&
-                zahlen.Contains(6)
-                )
-            {
-                resultat.Add(würfe.grossestrasse);
-            }
-
-            //überprüfe ob Liste leer ist
-            if (resultat.Count <= 0)
-            {
-                resultat.Add(würfe.fehler);
-            }
-
-
-            return resultat;
         }
         #endregion
 
         #region oberfläche
-        public void erneuereText(List<int> zahlen)
+        private void erneuereText(List<int> zahlen)
         {
             if (zahlen.Count <= 0)
             {
@@ -308,83 +185,64 @@ namespace Kniffel
         }
 
         //Geht über alle würfel und setzt die faben jenachdem ob der würfel würfelbar ist oder nicht
-        public void erneuereBilder()
+        private void erneuereBilder()
         {
-            for (int i = 0; i < 5; i++)
+            if (würfelstatus[0])
             {
-                switch (i)
-                {
-                    case 0:
-                        {
-                            if (würfelstatus[0])
-                            {
-                                pbstatus1.BackColor = Color.Lime;
-                            }
-                            else
-                            {
-                                pbstatus1.BackColor = Color.Red;
-                            }
+                pbstatus1.BackColor = Color.Lime;
+            }
+            else
+            {
+                pbstatus1.BackColor = Color.Red;
+            }
 
-                            break;
-                        }
-                    case 1:
-                        {
-                            if (würfelstatus[1])
-                            {
-                                pbstatus2.BackColor = Color.Lime;
-                            }
-                            else
-                            {
-                                pbstatus2.BackColor = Color.Red;
-                            }
+            if (würfelstatus[1])
+            {
+                pbstatus2.BackColor = Color.Lime;
+            }
+            else
+            {
+                pbstatus2.BackColor = Color.Red;
+            }
 
-                            break;
-                        }
-                    case 2:
-                        {
-                            if (würfelstatus[2])
-                            {
-                                pbstatus3.BackColor = Color.Lime;
-                            }
-                            else
-                            {
-                                pbstatus3.BackColor = Color.Red;
-                            }
+            if (würfelstatus[1])
+            {
+                pbstatus2.BackColor = Color.Lime;
+            }
+            else
+            {
+                pbstatus2.BackColor = Color.Red;
+            }
 
-                            break;
-                        }
-                    case 3:
-                        {
-                            if (würfelstatus[3])
-                            {
-                                pbstatus4.BackColor = Color.Lime;
-                            }
-                            else
-                            {
-                                pbstatus4.BackColor = Color.Red;
-                            }
+            if (würfelstatus[2])
+            {
+                pbstatus3.BackColor = Color.Lime;
+            }
+            else
+            {
+                pbstatus3.BackColor = Color.Red;
+            }
 
-                            break;
-                        }
-                    case 4:
-                        {
-                            if (würfelstatus[4])
-                            {
-                                pbstatus5.BackColor = Color.Lime;
-                            }
-                            else
-                            {
-                                pbstatus5.BackColor = Color.Red;
-                            }
+            if (würfelstatus[3])
+            {
+                pbstatus4.BackColor = Color.Lime;
+            }
+            else
+            {
+                pbstatus4.BackColor = Color.Red;
+            }
 
-                            break;
-                        }
-                }
-                
+            if (würfelstatus[4])
+            {
+                pbstatus5.BackColor = Color.Lime;
+            }
+            else
+            {
+                pbstatus5.BackColor = Color.Red;
             }
         }
 
-        public void wechselStatus(int i)
+        private void wechselStatus(int i)
         {
             if (würfelstatus[i])
             {
@@ -737,11 +595,11 @@ namespace Kniffel
             }
         }
 
-        public void beendeSpiel(int spielerzahl)
+        private void beendeSpiel(int spielerzahl)
         {
             if (spielerzahl == -1)
             {
-                DialogResult result = MessageBox.Show("Keiner hat Gewonnen wie hast du das denn hinbekommen?!", "Idiot",
+                DialogResult result = MessageBox.Show("Unentschieden, einer muss sich mehr anstrengen!", "Unetschieden",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Exclamation);
             }
@@ -752,11 +610,10 @@ namespace Kniffel
                                     MessageBoxIcon.Exclamation);
             }
 
-            
-
             hauptmenü.zerstöreSpiel();
         }
         #endregion
 
+        
     }
 } 

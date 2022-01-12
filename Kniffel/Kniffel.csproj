@@ -93,9 +93,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spieler.cs" />
+    <Compile Include="würfe.cs" />
     <EmbeddedResource Include="Hauptmenü.resx">
       <DependentUpon>Hauptmenü.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="KniffelSpiel.resx">
       <DependentUpon>KniffelSpiel.cs</DependentUpon>

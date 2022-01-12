@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Kniffel
 {
     public partial class Kniffel_Regeln : Form
     {
-        public bool imSpiel { get;  set; }
-
         Hauptmenü hauptmenü;
 
         public Kniffel_Regeln(Hauptmenü hauptmenü)
@@ -26,7 +25,7 @@ namespace Kniffel
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             string spielregeln = "https://www.spielregeln.de/kniffel-regeln-ablauf-spielanleitung.html";
-            System.Diagnostics.Process.Start(spielregeln);
+            Process.Start(spielregeln);
         }
 
         private void Kniffel_Regeln_FormClosing(object sender, FormClosingEventArgs e)

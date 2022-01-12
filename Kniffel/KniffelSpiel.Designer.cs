@@ -132,7 +132,6 @@ namespace Kniffel
             this.btwürfeln = new System.Windows.Forms.Button();
             this.lbrunde = new System.Windows.Forms.Label();
             this.btregeln = new System.Windows.Forms.Button();
-            this.rtbmöglichkeiten = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbzahl2)).BeginInit();
@@ -177,7 +176,7 @@ namespace Kniffel
             this.tbSp1Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Einer.TabIndex = 4;
             this.tbSp1Einer.Text = "0";
-            this.tbSp1Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp1Einer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Zweier
             // 
@@ -186,7 +185,7 @@ namespace Kniffel
             this.tbSp1Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Zweier.TabIndex = 5;
             this.tbSp1Zweier.Text = "0";
-            this.tbSp1Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp1Zweier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Dreier
             // 
@@ -195,7 +194,7 @@ namespace Kniffel
             this.tbSp1Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Dreier.TabIndex = 6;
             this.tbSp1Dreier.Text = "0";
-            this.tbSp1Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp1Dreier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1GroßeStraße
             // 
@@ -204,7 +203,7 @@ namespace Kniffel
             this.tbSp1GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp1GroßeStraße.TabIndex = 7;
             this.tbSp1GroßeStraße.Text = "0";
-            this.tbSp1GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1GroßeStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1KleineStraße
             // 
@@ -213,7 +212,7 @@ namespace Kniffel
             this.tbSp1KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp1KleineStraße.TabIndex = 8;
             this.tbSp1KleineStraße.Text = "0";
-            this.tbSp1KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1KleineStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1FullHouse
             // 
@@ -222,7 +221,7 @@ namespace Kniffel
             this.tbSp1FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp1FullHouse.TabIndex = 9;
             this.tbSp1FullHouse.Text = "0";
-            this.tbSp1FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1FullHouse.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Viererpasch
             // 
@@ -231,7 +230,7 @@ namespace Kniffel
             this.tbSp1Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Viererpasch.TabIndex = 10;
             this.tbSp1Viererpasch.Text = "0";
-            this.tbSp1Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1Viererpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Dreierpasch
             // 
@@ -240,7 +239,7 @@ namespace Kniffel
             this.tbSp1Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Dreierpasch.TabIndex = 11;
             this.tbSp1Dreierpasch.Text = "0";
-            this.tbSp1Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1Dreierpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Bonus
             // 
@@ -257,7 +256,7 @@ namespace Kniffel
             this.tbSp1Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Sechser.TabIndex = 14;
             this.tbSp1Sechser.Text = "0";
-            this.tbSp1Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp1Sechser.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Fünfer
             // 
@@ -266,7 +265,7 @@ namespace Kniffel
             this.tbSp1Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Fünfer.TabIndex = 15;
             this.tbSp1Fünfer.Text = "0";
-            this.tbSp1Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp1Fünfer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Vierer
             // 
@@ -275,7 +274,7 @@ namespace Kniffel
             this.tbSp1Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Vierer.TabIndex = 16;
             this.tbSp1Vierer.Text = "0";
-            this.tbSp1Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp1Vierer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Chance
             // 
@@ -284,7 +283,7 @@ namespace Kniffel
             this.tbSp1Chance.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Chance.TabIndex = 18;
             this.tbSp1Chance.Text = "0";
-            this.tbSp1Chance.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1Chance.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp1Kniffel
             // 
@@ -293,7 +292,7 @@ namespace Kniffel
             this.tbSp1Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp1Kniffel.TabIndex = 19;
             this.tbSp1Kniffel.Text = "0";
-            this.tbSp1Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp1Kniffel.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Einer
             // 
@@ -302,7 +301,7 @@ namespace Kniffel
             this.tbSp2Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Einer.TabIndex = 20;
             this.tbSp2Einer.Text = "0";
-            this.tbSp2Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp2Einer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Zweier
             // 
@@ -311,7 +310,7 @@ namespace Kniffel
             this.tbSp2Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Zweier.TabIndex = 21;
             this.tbSp2Zweier.Text = "0";
-            this.tbSp2Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp2Zweier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Vierer
             // 
@@ -320,7 +319,7 @@ namespace Kniffel
             this.tbSp2Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Vierer.TabIndex = 22;
             this.tbSp2Vierer.Text = "0";
-            this.tbSp2Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp2Vierer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Dreier
             // 
@@ -329,7 +328,7 @@ namespace Kniffel
             this.tbSp2Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Dreier.TabIndex = 23;
             this.tbSp2Dreier.Text = "0";
-            this.tbSp2Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp2Dreier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Sechser
             // 
@@ -338,7 +337,7 @@ namespace Kniffel
             this.tbSp2Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Sechser.TabIndex = 24;
             this.tbSp2Sechser.Text = "0";
-            this.tbSp2Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp2Sechser.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Fünfer
             // 
@@ -347,7 +346,7 @@ namespace Kniffel
             this.tbSp2Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Fünfer.TabIndex = 25;
             this.tbSp2Fünfer.Text = "0";
-            this.tbSp2Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp2Fünfer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Chance
             // 
@@ -356,7 +355,7 @@ namespace Kniffel
             this.tbSp2Chance.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Chance.TabIndex = 27;
             this.tbSp2Chance.Text = "0";
-            this.tbSp2Chance.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2Chance.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Kniffel
             // 
@@ -365,7 +364,7 @@ namespace Kniffel
             this.tbSp2Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Kniffel.TabIndex = 28;
             this.tbSp2Kniffel.Text = "0";
-            this.tbSp2Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2Kniffel.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2GroßeStraße
             // 
@@ -374,7 +373,7 @@ namespace Kniffel
             this.tbSp2GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp2GroßeStraße.TabIndex = 29;
             this.tbSp2GroßeStraße.Text = "0";
-            this.tbSp2GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2GroßeStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2KleineStraße
             // 
@@ -383,7 +382,7 @@ namespace Kniffel
             this.tbSp2KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp2KleineStraße.TabIndex = 30;
             this.tbSp2KleineStraße.Text = "0";
-            this.tbSp2KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2KleineStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2FullHouse
             // 
@@ -392,7 +391,7 @@ namespace Kniffel
             this.tbSp2FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp2FullHouse.TabIndex = 31;
             this.tbSp2FullHouse.Text = "0";
-            this.tbSp2FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2FullHouse.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Viererpasch
             // 
@@ -401,7 +400,7 @@ namespace Kniffel
             this.tbSp2Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Viererpasch.TabIndex = 32;
             this.tbSp2Viererpasch.Text = "0";
-            this.tbSp2Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2Viererpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Dreierpasch
             // 
@@ -410,7 +409,7 @@ namespace Kniffel
             this.tbSp2Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp2Dreierpasch.TabIndex = 33;
             this.tbSp2Dreierpasch.Text = "0";
-            this.tbSp2Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp2Dreierpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp2Bonus
             // 
@@ -639,7 +638,7 @@ namespace Kniffel
             this.tbSp3Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Dreierpasch.TabIndex = 68;
             this.tbSp3Dreierpasch.Text = "0";
-            this.tbSp3Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3Dreierpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Viererpasch
             // 
@@ -648,7 +647,7 @@ namespace Kniffel
             this.tbSp3Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Viererpasch.TabIndex = 67;
             this.tbSp3Viererpasch.Text = "0";
-            this.tbSp3Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3Viererpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3FullHouse
             // 
@@ -657,7 +656,7 @@ namespace Kniffel
             this.tbSp3FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp3FullHouse.TabIndex = 66;
             this.tbSp3FullHouse.Text = "0";
-            this.tbSp3FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3FullHouse.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3KleineStraße
             // 
@@ -666,7 +665,7 @@ namespace Kniffel
             this.tbSp3KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp3KleineStraße.TabIndex = 65;
             this.tbSp3KleineStraße.Text = "0";
-            this.tbSp3KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3KleineStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3GroßeStraße
             // 
@@ -675,7 +674,7 @@ namespace Kniffel
             this.tbSp3GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp3GroßeStraße.TabIndex = 64;
             this.tbSp3GroßeStraße.Text = "0";
-            this.tbSp3GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3GroßeStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Kniffel
             // 
@@ -684,7 +683,7 @@ namespace Kniffel
             this.tbSp3Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Kniffel.TabIndex = 63;
             this.tbSp3Kniffel.Text = "0";
-            this.tbSp3Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3Kniffel.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Chance
             // 
@@ -693,7 +692,7 @@ namespace Kniffel
             this.tbSp3Chance.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Chance.TabIndex = 62;
             this.tbSp3Chance.Text = "0";
-            this.tbSp3Chance.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp3Chance.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Fünfer
             // 
@@ -702,7 +701,7 @@ namespace Kniffel
             this.tbSp3Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Fünfer.TabIndex = 61;
             this.tbSp3Fünfer.Text = "0";
-            this.tbSp3Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp3Fünfer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Sechser
             // 
@@ -711,7 +710,7 @@ namespace Kniffel
             this.tbSp3Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Sechser.TabIndex = 60;
             this.tbSp3Sechser.Text = "0";
-            this.tbSp3Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp3Sechser.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Dreier
             // 
@@ -720,7 +719,7 @@ namespace Kniffel
             this.tbSp3Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Dreier.TabIndex = 59;
             this.tbSp3Dreier.Text = "0";
-            this.tbSp3Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp3Dreier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Vierer
             // 
@@ -729,7 +728,7 @@ namespace Kniffel
             this.tbSp3Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Vierer.TabIndex = 58;
             this.tbSp3Vierer.Text = "0";
-            this.tbSp3Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp3Vierer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Zweier
             // 
@@ -738,7 +737,7 @@ namespace Kniffel
             this.tbSp3Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Zweier.TabIndex = 57;
             this.tbSp3Zweier.Text = "0";
-            this.tbSp3Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp3Zweier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp3Einer
             // 
@@ -747,7 +746,7 @@ namespace Kniffel
             this.tbSp3Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp3Einer.TabIndex = 56;
             this.tbSp3Einer.Text = "0";
-            this.tbSp3Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp3Einer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // lbSp4Gesammtsumme
             // 
@@ -780,7 +779,7 @@ namespace Kniffel
             this.tbSp4Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Dreierpasch.TabIndex = 84;
             this.tbSp4Dreierpasch.Text = "0";
-            this.tbSp4Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4Dreierpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Viererpasch
             // 
@@ -789,7 +788,7 @@ namespace Kniffel
             this.tbSp4Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Viererpasch.TabIndex = 83;
             this.tbSp4Viererpasch.Text = "0";
-            this.tbSp4Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4Viererpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4FullHouse
             // 
@@ -798,7 +797,7 @@ namespace Kniffel
             this.tbSp4FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp4FullHouse.TabIndex = 82;
             this.tbSp4FullHouse.Text = "0";
-            this.tbSp4FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4FullHouse.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4KleineStraße
             // 
@@ -807,7 +806,7 @@ namespace Kniffel
             this.tbSp4KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp4KleineStraße.TabIndex = 81;
             this.tbSp4KleineStraße.Text = "0";
-            this.tbSp4KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4KleineStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4GroßeStraße
             // 
@@ -816,7 +815,7 @@ namespace Kniffel
             this.tbSp4GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp4GroßeStraße.TabIndex = 80;
             this.tbSp4GroßeStraße.Text = "0";
-            this.tbSp4GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4GroßeStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Kniffel
             // 
@@ -825,7 +824,7 @@ namespace Kniffel
             this.tbSp4Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Kniffel.TabIndex = 79;
             this.tbSp4Kniffel.Text = "0";
-            this.tbSp4Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4Kniffel.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Chance
             // 
@@ -834,7 +833,7 @@ namespace Kniffel
             this.tbSp4Chance.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Chance.TabIndex = 78;
             this.tbSp4Chance.Text = "0";
-            this.tbSp4Chance.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp4Chance.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Fünfer
             // 
@@ -843,7 +842,7 @@ namespace Kniffel
             this.tbSp4Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Fünfer.TabIndex = 77;
             this.tbSp4Fünfer.Text = "0";
-            this.tbSp4Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp4Fünfer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Sechser
             // 
@@ -852,7 +851,7 @@ namespace Kniffel
             this.tbSp4Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Sechser.TabIndex = 76;
             this.tbSp4Sechser.Text = "0";
-            this.tbSp4Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp4Sechser.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Dreier
             // 
@@ -861,7 +860,7 @@ namespace Kniffel
             this.tbSp4Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Dreier.TabIndex = 75;
             this.tbSp4Dreier.Text = "0";
-            this.tbSp4Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp4Dreier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Vierer
             // 
@@ -870,7 +869,7 @@ namespace Kniffel
             this.tbSp4Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Vierer.TabIndex = 74;
             this.tbSp4Vierer.Text = "0";
-            this.tbSp4Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp4Vierer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Zweier
             // 
@@ -879,7 +878,7 @@ namespace Kniffel
             this.tbSp4Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Zweier.TabIndex = 73;
             this.tbSp4Zweier.Text = "0";
-            this.tbSp4Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp4Zweier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp4Einer
             // 
@@ -888,7 +887,7 @@ namespace Kniffel
             this.tbSp4Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp4Einer.TabIndex = 72;
             this.tbSp4Einer.Text = "0";
-            this.tbSp4Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp4Einer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // lbSp5Gesammtsumme
             // 
@@ -921,7 +920,7 @@ namespace Kniffel
             this.tbSp5Dreierpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Dreierpasch.TabIndex = 100;
             this.tbSp5Dreierpasch.Text = "0";
-            this.tbSp5Dreierpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5Dreierpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Viererpasch
             // 
@@ -930,7 +929,7 @@ namespace Kniffel
             this.tbSp5Viererpasch.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Viererpasch.TabIndex = 99;
             this.tbSp5Viererpasch.Text = "0";
-            this.tbSp5Viererpasch.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5Viererpasch.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5FullHouse
             // 
@@ -939,7 +938,7 @@ namespace Kniffel
             this.tbSp5FullHouse.Size = new System.Drawing.Size(76, 20);
             this.tbSp5FullHouse.TabIndex = 98;
             this.tbSp5FullHouse.Text = "0";
-            this.tbSp5FullHouse.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5FullHouse.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5KleineStraße
             // 
@@ -948,7 +947,7 @@ namespace Kniffel
             this.tbSp5KleineStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp5KleineStraße.TabIndex = 97;
             this.tbSp5KleineStraße.Text = "0";
-            this.tbSp5KleineStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5KleineStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5GroßeStraße
             // 
@@ -957,7 +956,7 @@ namespace Kniffel
             this.tbSp5GroßeStraße.Size = new System.Drawing.Size(76, 20);
             this.tbSp5GroßeStraße.TabIndex = 96;
             this.tbSp5GroßeStraße.Text = "0";
-            this.tbSp5GroßeStraße.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5GroßeStraße.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Kniffel
             // 
@@ -966,7 +965,7 @@ namespace Kniffel
             this.tbSp5Kniffel.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Kniffel.TabIndex = 95;
             this.tbSp5Kniffel.Text = "0";
-            this.tbSp5Kniffel.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5Kniffel.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Chance
             // 
@@ -975,7 +974,7 @@ namespace Kniffel
             this.tbSp5Chance.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Chance.TabIndex = 94;
             this.tbSp5Chance.Text = "0";
-            this.tbSp5Chance.TextChanged += new System.EventHandler(this.tbUnten_TextChanged);
+            this.tbSp5Chance.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Fünfer
             // 
@@ -984,7 +983,7 @@ namespace Kniffel
             this.tbSp5Fünfer.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Fünfer.TabIndex = 93;
             this.tbSp5Fünfer.Text = "0";
-            this.tbSp5Fünfer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp5Fünfer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Sechser
             // 
@@ -993,7 +992,7 @@ namespace Kniffel
             this.tbSp5Sechser.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Sechser.TabIndex = 92;
             this.tbSp5Sechser.Text = "0";
-            this.tbSp5Sechser.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp5Sechser.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Dreier
             // 
@@ -1002,7 +1001,7 @@ namespace Kniffel
             this.tbSp5Dreier.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Dreier.TabIndex = 91;
             this.tbSp5Dreier.Text = "0";
-            this.tbSp5Dreier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp5Dreier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Vierer
             // 
@@ -1011,7 +1010,7 @@ namespace Kniffel
             this.tbSp5Vierer.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Vierer.TabIndex = 90;
             this.tbSp5Vierer.Text = "0";
-            this.tbSp5Vierer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp5Vierer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Zweier
             // 
@@ -1020,7 +1019,7 @@ namespace Kniffel
             this.tbSp5Zweier.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Zweier.TabIndex = 89;
             this.tbSp5Zweier.Text = "0";
-            this.tbSp5Zweier.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp5Zweier.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // tbSp5Einer
             // 
@@ -1029,7 +1028,7 @@ namespace Kniffel
             this.tbSp5Einer.Size = new System.Drawing.Size(76, 20);
             this.tbSp5Einer.TabIndex = 88;
             this.tbSp5Einer.Text = "0";
-            this.tbSp5Einer.TextChanged += new System.EventHandler(this.tbOben_TextChanged);
+            this.tbSp5Einer.TextChanged += new System.EventHandler(this.tbSp1Einer_TextChanged);
             // 
             // lbPlayer
             // 
@@ -1078,23 +1077,11 @@ namespace Kniffel
             this.btregeln.UseVisualStyleBackColor = true;
             this.btregeln.Click += new System.EventHandler(this.btregeln_Click);
             // 
-            // rtbmöglichkeiten
-            // 
-            this.rtbmöglichkeiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbmöglichkeiten.Location = new System.Drawing.Point(31, 320);
-            this.rtbmöglichkeiten.Name = "rtbmöglichkeiten";
-            this.rtbmöglichkeiten.ReadOnly = true;
-            this.rtbmöglichkeiten.Size = new System.Drawing.Size(274, 312);
-            this.rtbmöglichkeiten.TabIndex = 109;
-            this.rtbmöglichkeiten.TabStop = false;
-            this.rtbmöglichkeiten.Text = "";
-            // 
             // KniffelSpiel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 644);
-            this.Controls.Add(this.rtbmöglichkeiten);
             this.Controls.Add(this.btregeln);
             this.Controls.Add(this.lbrunde);
             this.Controls.Add(this.btwürfeln);
@@ -1324,6 +1311,5 @@ namespace Kniffel
         private System.Windows.Forms.Button btwürfeln;
         private System.Windows.Forms.Label lbrunde;
         private System.Windows.Forms.Button btregeln;
-        private System.Windows.Forms.RichTextBox rtbmöglichkeiten;
     }
 }

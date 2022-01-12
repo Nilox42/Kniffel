@@ -12,8 +12,8 @@ namespace Kniffel
 {
     public partial class Hauptmenü : Form
     {
-        public Kniffel_Regeln kniffel_Regeln;
-        public KniffelSpiel kniffelSpiel;
+        private Kniffel_Regeln kniffel_Regeln;
+        private KniffelSpiel kniffelSpiel;
 
         public Hauptmenü()
         {
@@ -67,7 +67,7 @@ namespace Kniffel
 
 
         //erstelle KniffelSpiel Form und gib spieleranzahl und referenz ans Hauptmenü weiter
-        private void erstelleSpiel(int spieleranzahl)
+        public void erstelleSpiel(int spieleranzahl)
         {
             kniffelSpiel = new KniffelSpiel(spieleranzahl, this);
             kniffelSpiel.Show();
