@@ -521,6 +521,7 @@ namespace Kniffel
             this.lbzahl1.Size = new System.Drawing.Size(36, 39);
             this.lbzahl1.TabIndex = 45;
             this.lbzahl1.Text = "0";
+            this.lbzahl1.Click += new System.EventHandler(this.pbzahl1_Click);
             // 
             // lbzahl2
             // 
@@ -531,6 +532,7 @@ namespace Kniffel
             this.lbzahl2.Size = new System.Drawing.Size(36, 39);
             this.lbzahl2.TabIndex = 46;
             this.lbzahl2.Text = "0";
+            this.lbzahl2.Click += new System.EventHandler(this.pbzahl2_Click);
             // 
             // lbzahl3
             // 
@@ -541,6 +543,7 @@ namespace Kniffel
             this.lbzahl3.Size = new System.Drawing.Size(36, 39);
             this.lbzahl3.TabIndex = 47;
             this.lbzahl3.Text = "0";
+            this.lbzahl3.Click += new System.EventHandler(this.pbzahl3_Click);
             // 
             // lbzahl4
             // 
@@ -551,6 +554,7 @@ namespace Kniffel
             this.lbzahl4.Size = new System.Drawing.Size(36, 39);
             this.lbzahl4.TabIndex = 48;
             this.lbzahl4.Text = "0";
+            this.lbzahl4.Click += new System.EventHandler(this.pbzahl4_Click);
             // 
             // lbzahl5
             // 
@@ -561,6 +565,7 @@ namespace Kniffel
             this.lbzahl5.Size = new System.Drawing.Size(36, 39);
             this.lbzahl5.TabIndex = 49;
             this.lbzahl5.Text = "0";
+            this.lbzahl5.Click += new System.EventHandler(this.pbzahl5_Click);
             // 
             // pbstatus1
             // 
