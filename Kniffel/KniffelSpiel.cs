@@ -36,6 +36,7 @@ namespace Kniffel
         }
 
 
+
         #region Input
         private void btHauptmenue_Click(object sender, EventArgs e)
         {
@@ -613,6 +614,7 @@ namespace Kniffel
             hauptmenü.zerstöreSpiel();
         }
         #endregion
+
 
         
     }
